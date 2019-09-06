@@ -1,0 +1,169 @@
+/*======
+DEFAULT VALUES:
+
+
+FONT Family: Roboto Condensed
+39c4cc
+#55efc4
+55EFC4
+
+background: #114357;  /* fallback for old browsers */
+/* background: -webkit-linear-gradient(to right, #F29492, #114357);  Chrome 10-25, Safari 5.1-6 */
+/* background: linear-gradient(to right, #F29492, #114357); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+*{
+   
+}
+
+body {
+    height: 100vh;
+    background: #085078;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #85D8CE, #FFFFFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #85D8CE, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+
+}
+/* 
+
+@keyframes linesAppear {
+
+    0% {
+        opacity: 0;
+        transform: length 0
+    }
+
+    100% {
+        opacity: 1;
+        transform length 1
+    }
+
+} */
+
+
+#banner {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    /* cursor: default;
+    height: 100vh;
+    min-height: 35em;
+    overflow: hidden;
+    position: relative; */
+    text-align: center;
+}
+
+    #banner h2 {
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        -moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
+        -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+        -ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        display: inline-block;
+        font-size: 1.75em;
+        opacity: 1;
+        padding: 0.35em 1em;
+        position: relative;
+        z-index: 1;
+    }
+
+        #banner h2:before, #banner h2:after {
+            -moz-transition: width 0.85s ease;
+            -webkit-transition: width 0.85s ease;
+            -ms-transition: width 0.85s ease;
+            transition: width 0.85s ease;
+            -moz-transition-delay: 0.25s;
+            -webkit-transition-delay: 0.25s;
+            -ms-transition-delay: 0.25s;
+            transition-delay: 0.25s;
+            background: black;
+            content: '';
+            display: block;
+            height: 2px;
+            position: absolute;
+            width: 100%;
+        }
+
+        #banner h2:before {
+            top: 0;
+            left: 0;
+        }
+
+        #banner h2:after {
+            bottom: 0;
+            right: 0;
+        }
+
+
+    #banner:after {
+        pointer-events: none;
+        -moz-transition: opacity 3s ease-in-out;
+        -webkit-transition: opacity 3s ease-in-out;
+        -ms-transition: opacity 3s ease-in-out;
+        transition: opacity 3s ease-in-out;
+        -moz-transition-delay: 1.25s;
+        -webkit-transition-delay: 1.25s;
+        -ms-transition-delay: 1.25s;
+        transition-delay: 1.25s;
+        content: '';
+        background: white;
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+    }
+
+    @media screen and (max-width: 736px) {
+
+        #banner {
+            padding: 7em 3em 5em 3em ;
+            height: auto;
+            min-height: 0;
+        }
+
+            #banner h2 {
+                font-size: 1.25em;
+            }
+
+            #banner br {
+                display: none;
+            }
+
+            #banner .more {
+                display: none;
+            }
+
+    }
+
+    /* h2 appears slightly */
+    body.is-preload #banner h2 {
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+    opacity: 0;
+    }
+
+    body.is-preload #banner h2:before, body.is-preload #banner h2:after {
+        width: 0;
+    }
