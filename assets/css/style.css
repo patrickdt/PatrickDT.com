@@ -11,40 +11,54 @@ background: #114357;  /* fallback for old browsers */
 /* background: -webkit-linear-gradient(to right, #F29492, #114357);  Chrome 10-25, Safari 5.1-6 */
 /* background: linear-gradient(to right, #F29492, #114357); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
-
-*{
-   
-}
-
 body {
-    height: 100vh;
     background: #085078;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #85D8CE, #FFFFFF);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #85D8CE, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background-repeat: no-repeat;
+}
+
+html, body {
+    height: 100%;
 }
 
 body {
     font-family: "Roboto", sans-serif;
-
 }
-/* 
 
-@keyframes linesAppear {
+#home {
+    height: 100%;
+}
 
-    0% {
-        opacity: 0;
-        transform: length 0
-    }
+#home-cover {
+    height: 100%;
+    /* background-image: url("../img/bg-home.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
-    100% {
-        opacity: 1;
-        transform length 1
-    }
+#home-content-box {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
 
+#home-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#home-heading h2 {
+    color: black;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 20px 0 20px 0;
+}
+
+/* .banner-header {
+    display: flex;
 } */
-
 
 #banner {
     display: -moz-flex;
@@ -59,11 +73,6 @@ body {
     -webkit-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-    /* cursor: default;
-    height: 100vh;
-    min-height: 35em;
-    overflow: hidden;
-    position: relative; */
     text-align: center;
 }
 
