@@ -32,10 +32,8 @@ body {
 
 #home-cover {
     height: 100%;
-    /* background-image: url("../img/bg-home.jpg"); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url("../img/bg-home.jpg");
+    
 }
 
 #home-content-box {
@@ -59,6 +57,37 @@ body {
 /* .banner-header {
     display: flex;
 } */
+
+/* Parallelx Scrolling */
+.bg-parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+/* Buttons */
+.btn-general {
+    border-color: #FFFFFF;
+    border-width: 2px;
+    border-radius: 0px; 
+    /* to remove rounded edges */
+    padding: 12px 26px 12px 26px;
+    /* change this if needed */
+    font-weight: 400;
+}
+
+.btn-white {
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+.btn-white:hover, .btn-white:focus {
+    background-color: #FFFFFF;
+    color: #41464b
+}
+
+
 
 #banner {
     display: -moz-flex;
@@ -176,3 +205,25 @@ body {
     body.is-preload #banner h2:before, body.is-preload #banner h2:after {
         width: 0;
     }
+
+
+/* animate */
+/* clean code by grouping things together
+#home-cover, #home-heading, #home-btn {
+    -webkit-animation-duration: .5s;
+} */
+
+#home-cover {
+    -webkit-animation-delay: .1s;
+    -webkit-animation-duration: .5s;
+}
+
+#home-heading {
+    -webkit-animation-delay: .5s;
+    -webkit-animation-duration: .5s;
+}
+
+#home-btn {
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: .5s;
+}
