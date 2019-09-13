@@ -22,6 +22,16 @@ html, body {
     height: 100%;
 }
 
+p {
+    color: #64707b;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+h3 {
+    color: #41464b;
+}
+
 body {
     font-family: "Roboto", sans-serif;
 }
@@ -227,6 +237,7 @@ body {
     -webkit-animation-delay: 1s;
     -webkit-animation-duration: .5s;
 }
+
 /* Content (generic) */
 .content-box {
     padding: 60px 0 60px 0;
@@ -243,7 +254,9 @@ body {
     width: 30px;
     height: 3px;
     background-color: #34c6d3;
-    margin: 0 auto 30 auto;
+    /* margin: 0 auto 30 auto; */
+    margin: auto;
+    /* margin-bottom: 30px */
 }
 
 /* Experience */
@@ -251,6 +264,8 @@ body {
     padding: 20px 0 20px 0;
     margin-bottom: 20px;
     cursor: pointer;
+    align-items: center;
+    margin: auto
 }
 
 .experience-icon i {
@@ -258,12 +273,26 @@ body {
     float: left;
     padding: 15px;
     margin-right: 25px;
-    width: 75px;
-    height: 75px;
+    width: 90px;
+    height: 90px;
     text-align: center;
+    justify-items: center;
 }
 
 .experience-list:hover .experience-icon i {
     color: #ffffff;
     background-color: #34c6d3;
+}
+
+.experience-list-title h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+    
+}
+
+.experience-list-desc p {
+    margin: 0;
+    padding-left: 15px;
+
 }
