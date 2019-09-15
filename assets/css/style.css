@@ -73,7 +73,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: scroll;
+    background-attachment: fixed;
+    /* or fixed */
 }
 
 /* Buttons */
@@ -97,6 +98,15 @@ body {
     color: #41464b
 }
 
+.btn-blue {
+    border-color: #34c6d3;
+    color: #34c6d3;
+}
+
+.btn-blue:hover, .btn-blue:focus {
+    background-color: #34c6d3;
+    color: white;
+}
 
 
 #banner {
@@ -268,15 +278,19 @@ body {
     margin: auto
 }
 
+/* .experience-title-and-desc {
+    align-items: center;
+} */
+
 .experience-icon i {
     color: #34c6d3;
     float: left;
-    padding: 15px;
+    padding: 10px;
     margin-right: 25px;
     width: 90px;
     height: 90px;
     text-align: center;
-    justify-items: center;
+    justify-items: center;;
 }
 
 .experience-list:hover .experience-icon i {
@@ -294,5 +308,193 @@ body {
 .experience-list-desc p {
     margin: 0;
     padding-left: 15px;
-
 }
+
+/* About */
+#about-content-box {
+    float: left;
+    height: 700px;
+}
+
+#about-content-box-outer {
+    width: 100%;
+    height: 100%;
+    display: flex
+   
+}
+
+#about-content-box-inner {
+    /* display: flex; */
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+#about .content-title h3 {
+    text-align: left
+}
+
+#about .content-title-underline {
+    margin: 0 0 30px 0;
+}
+
+#about-desc p {
+    margin-bottom: 30px;
+}
+
+#about-bg-diagonal{
+    width: 60%;
+    height: 700px;
+    float: right;
+    background-image: url(../img/coffee-break.jpg);
+    border-left: 200px solid white;
+    border-top: 700px solid transparent;
+}
+
+/* Social Media */
+.social-media-list {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-list li {
+    list-style: none;
+    /* display: inline-flex; */
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.social-icon i {
+    /* font-size: 17px; */
+}
+
+.icon-gray i {
+    color: #64707b;
+}
+
+.icon-white i {
+    color: white;
+}
+
+.social-icon i:hover {
+    color: #34c6d3;
+}
+
+/* Contact */
+footer {
+    background-color: #41464b;
+    padding-top: 30px; 
+    border-top: 5px solid rgba(0,0,0,0.1)
+}
+
+#contact-info h3 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+#footer-bottom {
+    background-color: rgba(0,0,0,0.1);
+    /* padding-top & padding-bottom */
+    padding: 30px 0px; 
+    margin-top: 60px;
+}
+
+#footer-copyrights p {
+    margin: 0;
+    color: white;
+}
+
+#footer-menu {
+    float: right;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#footer-menu ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#footer-menu ul li {
+    display:inline-block;
+}
+
+#footer-menu a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#footer-menu a:hover {
+    color: #34c6d3;
+}
+
+/* Navigation */
+.navbar {
+    padding: 20px 0;
+    transition: all .5s ease-in-out;
+}
+
+.web-top-nav {
+    background: rgba(0,0,0,0.7);
+    padding: 7px 0;
+}
+
+.web-nav-wrapper {
+    padding: 0 85px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav > li > a {
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+    background: none;
+    color: #34c6d3;
+}
+
+.navbar-toggler {
+    background-color: rgba(0,0,0,0.1);
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+
+.navbar-toggler-icon {
+    /* background-color: #ffffff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa.fa-navicon {
+    color:white;
+}
+
+.nav-item {
+    /* align-items: right; */
+    /* padding-left: 88%; */
+    display:flex;
+    margin-left: auto;
+    align-items: left;
+}
+
+.web-top-nav ul.navbar-nav > li > a.active {
+    color: #34c6d3;
+}
+
+ 
