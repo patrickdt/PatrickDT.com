@@ -25,7 +25,19 @@ $(function () {
     });
 });
 
+// Programs
+$(document).ready(function () {
+    $("#programs-list").owlCarousel({
+        items: 5,
+        autoplay: true,
+        smartSpeed: 350,
+        loop: true,
+        autoplayHoverPause: true
+    });
+});
 
+
+// Smooth Scroll
 $(function () {
     $('a.smooth-scroll').on('click', function (e) {
         // console.log(this.hash);  // prints id #home, #experiences, #about, #projects, etc
