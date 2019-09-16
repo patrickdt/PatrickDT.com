@@ -108,6 +108,16 @@ body {
     color: white;
 }
 
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 22px;
+    padding: 3px 15px;
+    border-radius: 0;
+    display: none;
+}
+
 
 #banner {
     display: -moz-flex;
@@ -497,4 +507,7 @@ footer {
     color: #34c6d3;
 }
 
- 
+/* Programs */
+.program {
+    padding: 12px;
+}
