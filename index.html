@@ -24,14 +24,20 @@
     <!-- animate CSS -->
     <link rel="stylesheet" href="assets/css/animate/animate.css">
 
+    <!-- Projects Hover -->
+    <script src="assets/js/projects/modernizr.custom.js"></script>
+    <link rel="stylesheet" href="assets/css/projects/component.css">
+    <!-- <link rel="stylesheet" href="assets/css/projects/default.css"> -->
+    <!-- <script src="assets/js/projects/modernizr.custom.js"></script> -->
+
     <!-- baguetteBox CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css"> -->
 
     <!-- Grid Layout With Zoom Effect -->
-    <link rel="stylesheet" href="assets/css/gallery-grid.css">
+    <!-- <link rel="stylesheet" href="assets/css/gallery-grid.css"> -->
 
     <!-- ihover CSS -->
-    <link rel="stylesheet" href="assets/css/ihover.css">
+    <!-- <link rel="stylesheet" href="assets/css/ihover.css"> -->
 
     <!-- owl carousel CSS -->
     <link rel="stylesheet" href="assets/css/owl-carousel/owl.carousel.min.css">
@@ -49,7 +55,8 @@
                 <div class="nav-header">
                     <a class="navbar-brand" href="#home">
                         <!-- <img src="./img/logo.png" alt="logo"> -->
-                        <img src="" alt="logo">
+                        <!-- <img src="" alt="logo"> -->
+                        <h3>PatrickDT</h3>
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#web-menu"
@@ -83,35 +90,29 @@
     </header>
 
     <section id="home">
-        <div id="home-cover" class="bg-parallax animated fadeIn">
-
-            <div id="home-content-box">
-                <div id="home-content-box-inner">
-                    <div id="home-heading" class="animated fadeIn">
-
-                        <section id="banner" class="banner-header">
-                            <div class="inner">
-
-                                <h2>Patrick D.</br>Tirtapraja</h2>
-
-
-                            </div>
-                            <div id="home-btn" class="animated fadeIn">
-                                <a class="btn btn-lg btn-general btn-white" href="#home" role="button"
-                                    title="Learn More About Me!">
-                                    Learn More!
-                                </a>
-                            </div>
-                        </section>
+        <div id="home-content-box" class="bg-parallax animated fadeIn">
+            <div id="home-heading" class="animated fadeIn">
+                <section id="banner" class="banner-header">
+                    <div class="inner">
+                        <h2>Patrick D.</br>Tirtapraja</h2>
                     </div>
-                </div>
+                    <div id="home-btn" class="animated fadeIn">
+                        <a class="btn btn-lg btn-general btn-white smooth-scroll" href="#experiences" role="button"
+                            title="Learn More About Me!">
+                            Learn More!
+                        </a>
+                    </div>
+                </section>
             </div>
         </div>
+
+        <!-- <div id="particles-js"></div> -->
+    
     </section>
+
 
     <!-- Experiences -->
     <section id="experiences">
-
         <div class="content-box">
             <div class="content-title wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
                 <h3>Experiences</h3>
@@ -298,6 +299,73 @@
 
     </section>
 
+</br></br></br></br></br></br></br>
+    <div class="container">
+        <div class="projects-grid projects-hover">
+            <li>
+                <figure>
+                    <img src="images/4.png" alt="img04">
+                    <figcaption>
+                        <h3>Settings</h3>
+                        <span>Jacob Cummings</span>
+                        <a href="http://dribbble.com/shots/1116685-Settings">Take a look</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/5.png" alt="img05">
+                    <figcaption>
+                        <h3>Safari</h3>
+                        <span>Jacob Cummings</span>
+                        <a href="http://dribbble.com/shots/1116775-Safari">Take a look</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/1.png" alt="img01">
+                    <figcaption>
+                        <h3>Camera</h3>
+                        <span>Jacob Cummings</span>
+                        <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/2.png" alt="img02">
+                    <figcaption>
+                        <h3>Music</h3>
+                        <span>Jacob Cummings</span>
+                        <a href="http://dribbble.com/shots/1115960-Music">Take a look</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/6.png" alt="img06">
+                    <figcaption>
+                        <h3>Game Center</h3>
+                        <span>Jacob Cummings</span>
+                        <a href="http://dribbble.com/shots/1118904-Game-Center">Take a look</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/3.png" alt="img03">
+                    <figcaption>
+                        <h3>Phone</h3>
+                        <span>Jacob Cummings</span>
+                        <a href="http://dribbble.com/shots/1117308-Phone">Take a look</a>
+                    </figcaption>
+                </figure>
+            </li>
+        </div><!-- /container -->
+    </div>
+
+
     </br></br></br></br></br></br></br></br></br></br></br></br></br>
     <div id="projects">
         <div class="container">
@@ -359,7 +427,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row mb-3">
                         <div class="col-md-4">
                             <div class=" card-body ih-item square effect6">
                                 <div class="">
@@ -416,6 +484,108 @@
             </div>
         </div>
     </div>
+
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+    <div id="test">
+        <div class="container">
+            <div class="content-title wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
+                <h3>Projects</h3>
+                <div class="content-title-underline"></div>
+            </div>
+        
+            <div class="projects-gallery">
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <div class="card-body projects-hover ih-item square effect6">
+                            <a href="https://engineering.purdue.edu/cdesign/wp/">
+                                <div class="img">
+                                    <img src="assets/img/cdesignlab.jpeg" alt="C Design Lab">
+                                </div>
+                                <div class="info">
+                                    <h3>C Design Lab Deep Learning</h3>
+                                    <p>Deep Learning CGAN etc</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+            
+                    <div class="col-md-4">
+                        <div class=" card-body projects-hoverih-item square effect6 ">
+                            <a href="assets/documents/Deep Learning with PyTorch.pdf">
+                                <div class="img">
+                                    <img src="assets/img/tf_python.png" alt="Deep Learning with Tensorflow and Python">
+                                </div>
+                                <div class="info">
+                                    <h3>Deep Learning with Tensorflow and Python</h3>
+                                    <p>Perform classification of MNIST dataset</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+            
+                    <div class="col-md-4">
+                        <div class=" card-body projects-hover ih-item square effect6">
+                            <a href="https://nanohub.org/resources/cracktestpfdm">
+                                <div class="img">
+                                    <img src="assets/img/nanohub_icon.ico" alt="Nanohub Fracture Analysis">
+                                </div>
+                                <div class="info">
+                                    <h3>Nanohub Research</h3>
+                                    <p>Fracture propagation analysis</p>
+                                </div>
+                            </a>
+            
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class=" card-body ih-item square effect6">
+                            <!-- another pdf file? -->
+                            <a href="">
+                                <div class="img">
+                                    <img src="assets/img/cfd.jpg" alt="Computational Fluid Dynamics">
+                                </div>
+                                <div class="info">
+                                    <h3>Computational Fluid Dynamics</h3>
+                                    <p>Perform analysis with MATLAB and vector plots</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class=" card-body ih-item square effect6">
+                            <!-- link to arduino code? link to pdf file? -->
+                            <a href="">
+                                <div class="img">
+                                    <img src="assets/img/senior_design.jpg" alt="Senior Design 2019 - Tilting Umbrella">
+                                </div>
+                                <div class="info">
+                                    <h3>Senior Design</h3>
+                                    <p>Tilting Umbrella</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-body ih-item square effect6">
+                            <a href="https://patrickdt.github.io/travel-site/">
+                                <div class="img">
+                                    <img src="assets/img/web_img.jpg" alt="Travel Website Practice">
+                                </div>
+                                <div class="info">
+                                    <h3>Travel Site Practice</h3>
+                                    <p>Using flex and media queries</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 
     <!-- Programming Languages -->
     <section id="programs">
@@ -531,12 +701,19 @@
         <!-- jQuery -->
         <script src="assets/js/jquery.min.js"></script>
 
+        <!-- particles.js -->
+        <script src="assets/js/particles/particles.min.js"></script>
+        <script src="assets/js/particles/app.js"></script>  
+
         <!-- custom JS -->
         <script src="assets/js/custom.js"></script>
 
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/html.js"></script>
+        <!-- banner -->
+        <script src="assets/js/banner/breakpoints.min.js"></script>
+        <script src="assets/js/banner/html.js"></script>
+
+        <!-- projects
+        <script src="assets/js/projects/modernizr.custom.js"></script> -->
 
         <!-- bootstrap CDN (JS, Propper.js, jQuery) -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -557,11 +734,13 @@
         <!-- owl carousel JS -->
         <script src="assets/js/owl-carousel/owl.carousel.min.js"></script>
 
+        
+
         <!-- baguetteBox CDN -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
         <script>
             baguetteBox.run('.tz-gallery');
-        </script>
+        </script> -->
 
 
 </body>

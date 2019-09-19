@@ -46,9 +46,17 @@ $(function () {
 
             const hash = this.hash;
 
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top - 55
-            }, 1250, 'easeInOutExpo');
+            if (hash !== '#home') {
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 55
+                }, 1250, 'easeInOutExpo');
+            }
+            else {
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 300
+                }, 1250, 'easeInOutExpo');
+            }           
         }
     });
 });
+

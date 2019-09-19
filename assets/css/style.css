@@ -11,15 +11,26 @@ background: #114357;  /* fallback for old browsers */
 /* background: -webkit-linear-gradient(to right, #F29492, #114357);  Chrome 10-25, Safari 5.1-6 */
 /* background: linear-gradient(to right, #F29492, #114357); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-body {
-    background: #085078;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #85D8CE, #FFFFFF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #85D8CE, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-repeat: no-repeat;
-}
+
 
 html, body {
     height: 100%;
+}
+
+body {
+    /* height: 100%; */
+    /* background: #85D8CE;  fallback for old browsers
+    background: -webkit-linear-gradient(to bottom, #85D8CE, #FFFFFF);   Chrome 10-25, Safari 5.1-6 
+    background: linear-gradient(to bottom, #85D8CE, #FFFFFF); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); */
+    
+ 
+
+    background-repeat: no-repeat;
+    background-image: url("../img/bg-home.jpg");   
+    background-position: center;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1),#ffffff);
+    /* background-image: url("../img/deep-space.jpg"); */
 }
 
 p {
@@ -37,24 +48,42 @@ body {
 }
 
 #home {
-    height: 100%;
+    height: 80%;
+    /* width: 100%;
+    background-image: url("../img/assorted-hot-beverages-tea-matcha-coffee.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#home-cover {
-    height: 100%;
-    background-image: url("../img/bg-home.jpg");
-    
-}
-
-#home-content-box {
+/* particles */
+#particles-js {
     width: 100%;
     height: 100%;
-    display: table;
+    /* background: grey; */
+    /* background-image: url("../img/deep-space.jpg"); */
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    /* background-size: cover;
+    background-position:center; */
+    /* align-self: center; */
 }
 
-#home-content-box-inner {
-    display: table-cell;
-    vertical-align: middle;
+/* #home-cover {
+    height: 100%;
+    background-image: url("../img/bg-home.jpg");   
+} */
+
+#home-content-box {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    /* margin-top: 20%; */
 }
 
 #home-heading h2 {
@@ -63,10 +92,6 @@ body {
     font-weight: 700;
     margin: 20px 0 20px 0;
 }
-
-/* .banner-header {
-    display: flex;
-} */
 
 /* Parallelx Scrolling */
 .bg-parallax {
@@ -132,7 +157,12 @@ body {
     -webkit-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
+    /* position: absolute;
+    margin-top: 20%;
+    margin-right: auto;
+    margin-left: auto; */
 }
 
     #banner h2 {
@@ -510,4 +540,9 @@ footer {
 /* Programs */
 .program {
     padding: 40px 0;
+}
+
+/* Projects */
+.projects-gallery {
+    padding: 40px;
 }
