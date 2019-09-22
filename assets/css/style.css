@@ -27,7 +27,7 @@ body {
  
 
     background-repeat: no-repeat;
-    background-image: url("../img/bg-home.jpg");   
+    /* background-image: url("../img/bg-home.jpg");    */
     background-position: center;
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1),#ffffff);
     /* background-image: url("../img/deep-space.jpg"); */
@@ -47,8 +47,16 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+::selection {
+    background: #FC766A; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+    background: #FC766A; /* Gecko Browsers */
+}
+
 #home {
-    height: 80%;
+    height: 100%;
     /* width: 100%;
     background-image: url("../img/assorted-hot-beverages-tea-matcha-coffee.jpg");
     background-repeat: no-repeat;
@@ -64,7 +72,7 @@ body {
     height: 100%;
     /* background: grey; */
     /* background-image: url("../img/deep-space.jpg"); */
-    position: fixed;
+    position: absolute;
     z-index: -10;
     top: 0;
     left: 0;
@@ -298,6 +306,7 @@ body {
     font-weight: 700;
     text-align: center;
     margin: 0 0 30px 0;
+    color: #00203F;
 }
 
 .content-title-underline {
@@ -313,8 +322,11 @@ body {
 .experience-list {
     padding: 20px 0 20px 0;
     margin-bottom: 20px;
-    cursor: pointer;
-    align-items: center;
+    /* cursor: pointer; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: left; */
     margin: auto
 }
 
@@ -379,6 +391,10 @@ body {
     margin: 0 0 30px 0;
 }
 
+#about-desc {
+    margin-bottom: 30px;
+}
+
 #about-desc p {
     margin-bottom: 30px;
 }
@@ -398,11 +414,22 @@ body {
     justify-content: center;
 }
 
+.social-media-list {
+    padding-left: 0px;
+}
+
 .social-media-list li {
+    /* padding-left: 50px; */
     list-style: none;
     /* display: inline-flex; */
-    width: 100px;
-    height: 100px;
+    width: 32px;
+    height: 32px;
+    /* width: 100px;
+    height: 100px; */
+    /* margin-right: 6px; */
+    /* margin-left: 50px; */
+    margin-left: 5px;
+    margin-right: 5px;
     margin-top: 10px;
 }
 
@@ -424,7 +451,8 @@ body {
 
 /* Contact */
 footer {
-    background-color: #41464b;
+    /* background-color: #41464b; */
+    background-color: #4B6076;
     padding-top: 30px; 
     border-top: 5px solid rgba(0,0,0,0.1)
 }
@@ -437,10 +465,11 @@ footer {
 
 /* Footer */
 #footer-bottom {
-    background-color: rgba(0,0,0,0.1);
+    /* background-color: rgba(0,0,0,0.1); */
+    background-color: #262A3B;
     /* padding-top & padding-bottom */
     padding: 30px 0px; 
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 #footer-copyrights p {
@@ -483,8 +512,14 @@ footer {
     transition: all .5s ease-in-out;
 }
 
+.navbar-brand h3 {
+    color: white;
+}
+
 .web-top-nav {
-    background: rgba(0,0,0,0.7);
+    /* background: rgba(0,0,0,0.7); */
+    /* background: #262A3B; */
+    background: rgba(38,42,59,0.7);
     padding: 7px 0;
 }
 
@@ -504,8 +539,8 @@ footer {
 }
 
 .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
-    background: none;
-    color: #34c6d3;
+    background: none !important;
+    color: #34c6d3 !important;
 }
 
 .navbar-toggler {
@@ -545,4 +580,87 @@ footer {
 /* Projects */
 .projects-gallery {
     padding: 40px;
+}
+
+/* experiences */
+#capitalone-logo {
+    width: 200px;
+}
+
+#ford-logo {
+    width: 200px;
+}
+
+.experience-box {
+    padding: 20px;
+    /* margin-right: 75px;
+    margin-left: -75px; */
+}
+
+.experience-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.experience-content {
+    display: block;
+    justify-content: left;
+    /* align-items: center; */
+}
+
+.other-software-experience h4 {
+    text-align: center;
+}
+
+.other-experiences .experience-content {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: right; */
+    align-items: center;
+}
+
+.experience-desc li{
+    list-style-type: square;
+    margin-left: -20px;
+}
+
+.other-experiences h4 {
+    text-align: center;
+}
+
+.other-company-logo {
+    width: 150px;
+}
+
+/* About strikethrough */
+@keyframes strike {
+    0%   { 
+        width : 0; 
+    }
+    100% { 
+        width: 100%; 
+    }
+}
+  
+.strike {
+    position: relative;
+}
+.strike::after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: black;
+    animation-name: strike;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
 }

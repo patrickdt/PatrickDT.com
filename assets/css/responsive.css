@@ -1,0 +1,103 @@
+/* Media Queries for Mobile-First Design */
+/* Large Devices (Desktops & Laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Medium Devices (Landdcape Tablets & Medium Desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Small Devices (Portrait Tablets & Small Desktops) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar {
+        padding: 10px 20px 7px 20px;
+    }
+
+    #footer-copyrights {
+        text-align: center;
+    }
+   
+    #footer-menu {
+        display: none;
+    }
+}
+
+/* Extra Small Devices (Landscape Phones & Portrait Tablets) */
+@media (max-width: 767px) {
+    /* Mobile menu */
+    .navbar {
+        padding: 10px 20px 7px 20px;
+    }
+
+    /* About */
+    /* Remove diagonal */
+    #about-bg-diagonal {
+        border-left: 0;
+        border-top: 0;
+        width: 100%;
+        height: 350px;
+    }
+    #about-content-box {
+        width: 100%;
+        height: 350px;
+    }
+
+    #footer-copyrights {
+        text-align: center;
+    }
+    #footer-menu {
+        display: none;
+    }
+
+    /* Home */
+    #home-heading h2 {
+        font-size: 40px;
+    }
+    
+    .btn-general {
+        padding: 6px 22px 6px 22px;
+        font-size: 14px;
+    }
+
+    /* Experience logo */
+    .experience-logo a {
+        margin: auto;
+        margin-bottom: 20px;
+        /* padding-bottom: 20px; */
+    }
+
+}
+
+/* Extra Small Devices (Smaller devices) */
+@media (max-width: 480px) {
+    .projects-grid figcaption h3 {
+        font-size: 14px;
+    }
+
+    .projects-grid figcaption {
+        font-size: 12px;
+    }
+
+}
+
+/* Extra Small Devices (Smaller devices) */
+@media (max-width: 320px) {
+    /* experience icon */
+/* TODO: Too big */
+    .experience-icon img {
+        max-width: 80px;
+        width: 58px;
+        height: 58px;
+        padding: 7px;
+    }
+
+    .experience-list-title h3 {
+        font-size: 17px;
+    }
+
+    #about-content-box {
+        margin-top: 40px;
+    }
+}
