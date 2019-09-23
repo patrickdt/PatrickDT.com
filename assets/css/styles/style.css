@@ -148,6 +148,7 @@ body {
 }
 
 .btn-back-to-top {
+    color: #ADEFD1;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -156,7 +157,6 @@ body {
     border-radius: 0;
     display: none;
 }
-
 
 #banner {
     display: -moz-flex;
@@ -324,54 +324,10 @@ body {
     /* margin-bottom: 30px */
 }
 
-/* Experience */
-.experience-list {
-    padding: 20px 0 20px 0;
-    margin-bottom: 20px;
-    /* cursor: pointer; */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* align-items: left; */
-    margin: auto
-}
-
-/* .experience-title-and-desc {
-    align-items: center;
-} */
-
-.experience-icon i {
-    color: #34c6d3;
-    float: left;
-    padding: 10px;
-    margin-right: 25px;
-    width: 90px;
-    height: 90px;
-    text-align: center;
-    justify-items: center;;
-}
-
-.experience-list:hover .experience-icon i {
-    color: #ffffff;
-    background-color: #34c6d3;
-}
-
-.experience-list-title h3 {
-    font-size: 20px;
-    font-weight: 400;
-    margin: 0 0 10px 0;
-    
-}
-
-.experience-list-desc p {
-    margin: 0;
-    padding-left: 15px;
-}
-
 /* About */
 #about-content-box {
     float: left;
-    height: 700px;
+    height: 800px;
 }
 
 #about-content-box-outer {
@@ -407,11 +363,102 @@ body {
 
 #about-bg-diagonal{
     width: 60%;
-    height: 700px;
+    height: 800px;
     float: right;
-    background-image: url(../img/coffee-break.jpg);
+    background-image: url(../../img/background/coffee-break.jpg);
     border-left: 200px solid white;
-    border-top: 700px solid transparent;
+    border-top: 800px solid transparent;
+}
+
+/* About strikethrough */
+@keyframes strike {
+    0%   { 
+        width : 0; 
+    }
+    100% { 
+        width: 100%; 
+    }
+}
+  
+.strike {
+    position: relative;
+}
+.strike::after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: black;
+    animation-name: strike;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+}
+
+/* Experience */
+.experience-box {
+    padding: 20px;
+    /* margin-right: 75px;
+    margin-left: -75px; */
+}
+
+.experience-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.experience-content {
+    display: block;
+    justify-content: left;
+    /* align-items: center; */
+}
+
+.other-software-experience h4 {
+    text-align: center;
+}
+
+.other-experiences .experience-content {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: right; */
+    align-items: center;
+}
+
+.experience-desc ul{
+    list-style-type: none;
+    margin-left: -20px;
+}
+
+.experience-desc li::before {
+    content: "\25AA"; 
+    color: #FC766A; 
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+#capitalone-logo {
+    width: 200px;
+}
+
+#ford-logo {
+    width: 200px;
+}
+
+.other-experiences h4 {
+    text-align: center;
+}
+
+.other-company-logo {
+    width: 150px;
 }
 
 /* Social Media */
@@ -587,102 +634,16 @@ footer {
 }
 
 /* Programs */
-.program {
-    padding: 40px 0;
+#programs {
+    padding: 20px;
 }
 
 /* Projects */
+.projects-content-box {
+    padding: 0;
+}
+
 .projects-gallery {
     padding: 40px;
 }
 
-/* experiences */
-#capitalone-logo {
-    width: 200px;
-}
-
-#ford-logo {
-    width: 200px;
-}
-
-.experience-box {
-    padding: 20px;
-    /* margin-right: 75px;
-    margin-left: -75px; */
-}
-
-.experience-logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.experience-content {
-    display: block;
-    justify-content: left;
-    /* align-items: center; */
-}
-
-.other-software-experience h4 {
-    text-align: center;
-}
-
-.other-experiences .experience-content {
-    max-width: 700px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: right; */
-    align-items: center;
-}
-
-.experience-desc ul{
-    list-style-type: none;
-    margin-left: -20px;
-}
-
-.experience-desc li::before {
-    content: "\25AA"; 
-    color: #FC766A; 
-    display: inline-block; 
-    width: 1em;
-    margin-left: -1em;
-}
-
-.other-experiences h4 {
-    text-align: center;
-}
-
-.other-company-logo {
-    width: 150px;
-}
-
-/* About strikethrough */
-@keyframes strike {
-    0%   { 
-        width : 0; 
-    }
-    100% { 
-        width: 100%; 
-    }
-}
-  
-.strike {
-    position: relative;
-}
-.strike::after {
-    content: ' ';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: black;
-    animation-name: strike;
-    animation-delay: 5s;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards; 
-}
