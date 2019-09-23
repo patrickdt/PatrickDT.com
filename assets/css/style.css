@@ -7,6 +7,12 @@ FONT Family: Roboto Condensed
 #55efc4
 55EFC4
 
+
+Mint: #ADEFD1
+Living Coral: #FC766A rgba(252,118,106)
+Sailor Blue: #262A3B
+Bluish gray: #4B6076
+
 background: #114357;  /* fallback for old browsers */
 /* background: -webkit-linear-gradient(to right, #F29492, #114357);  Chrome 10-25, Safari 5.1-6 */
 /* background: linear-gradient(to right, #F29492, #114357); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -132,12 +138,12 @@ body {
 }
 
 .btn-blue {
-    border-color: #34c6d3;
-    color: #34c6d3;
+    border-color: #ADEFD1;
+    color: #4B6076;
 }
 
 .btn-blue:hover, .btn-blue:focus {
-    background-color: #34c6d3;
+    background-color: #ADEFD1;
     color: white;
 }
 
@@ -199,7 +205,7 @@ body {
             -webkit-transition-delay: 0.25s;
             -ms-transition-delay: 0.25s;
             transition-delay: 0.25s;
-            background: black;
+            background: #FC766A;
             content: '';
             display: block;
             height: 2px;
@@ -312,7 +318,7 @@ body {
 .content-title-underline {
     width: 30px;
     height: 3px;
-    background-color: #34c6d3;
+    background-color: #ADEFD1;
     /* margin: 0 auto 30 auto; */
     margin: auto;
     /* margin-bottom: 30px */
@@ -446,7 +452,8 @@ body {
 }
 
 .social-icon i:hover {
-    color: #34c6d3;
+    /* color: #34c6d3; */
+    color: rgb(173, 239, 209)
 }
 
 /* Contact */
@@ -454,8 +461,10 @@ footer {
     /* background-color: #41464b; */
     background-color: #4B6076;
     padding-top: 30px; 
-    border-top: 5px solid rgba(0,0,0,0.1)
+    /* border-top: 5px solid rgba(0,0,0,0.1) */
+    border-top: 5px solid rgba(252,118,106,0.8)
 }
+
 
 #contact-info h3 {
     color: #ffffff;
@@ -519,7 +528,12 @@ footer {
 .web-top-nav {
     /* background: rgba(0,0,0,0.7); */
     /* background: #262A3B; */
-    background: rgba(38,42,59,0.7);
+    /* background: rgba(38,42,59,0.7); */ /* Sailor Blue */
+    /* background: rgba(252,118,106, 0.7); Living Coral */
+    /* background: rgba(173, 239, 209, 0.7); Mint */
+
+    background: rgba(158,217,204, 0.8);
+
     padding: 7px 0;
 }
 
@@ -540,12 +554,12 @@ footer {
 
 .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
     background: none !important;
-    color: #34c6d3 !important;
+    color: #FC766A !important;
 }
 
 .navbar-toggler {
     background-color: rgba(0,0,0,0.1);
-    border: 1px solid #ffffff;
+    border: 1px solid #4B6076;
     border-radius: 10px;
 }
 
@@ -557,7 +571,7 @@ footer {
 }
 
 .fa.fa-navicon {
-    color:white;
+    color: white;
 }
 
 .nav-item {
@@ -623,9 +637,17 @@ footer {
     align-items: center;
 }
 
-.experience-desc li{
-    list-style-type: square;
+.experience-desc ul{
+    list-style-type: none;
     margin-left: -20px;
+}
+
+.experience-desc li::before {
+    content: "\25AA"; 
+    color: #FC766A; 
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
 }
 
 .other-experiences h4 {

@@ -18,7 +18,7 @@
     #footer-copyrights {
         text-align: center;
     }
-   
+
     #footer-menu {
         display: none;
     }
@@ -85,7 +85,7 @@
 /* Extra Small Devices (Smaller devices) */
 @media (max-width: 320px) {
     /* experience icon */
-/* TODO: Too big */
+    /* TODO: Too big */
     .experience-icon img {
         max-width: 80px;
         width: 58px;

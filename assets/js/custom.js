@@ -38,8 +38,8 @@ $(function () {
         }
         else { // show
             $("nav").addClass("web-top-nav");
-            $(".navbar-brand h3").css('color', 'white')
-            $(".navbar-nav > li > a").css('color', 'white')
+            $(".navbar-brand h3").css('color', '#4B6076')
+            $(".navbar-nav > li > a").css('color', '#4B6076')
             $(".navbar-toggler").css('background-color', 'rgba(0,0,0,0.1)');
             $("#back-to-top").fadeIn();
         }
