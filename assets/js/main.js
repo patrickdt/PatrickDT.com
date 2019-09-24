@@ -8,11 +8,11 @@ $(document).ready(function () {
 })
 
 // TODO: make an automatic carousel with the different logos of programming, design languages
-$(document).ready(function() {
+$(document).ready(function () {
     $(".navbar-brand h3").css('color', '#00203F');
     $(".navbar-nav > li > a").css('color', '#00203F');
     $(".navbar-toggler").css('background-color', '#00203F');
-    
+
 
     // $(".navbar-nav > li > a:hover, .navbar-nav > li > a:focus")
     // $(".navbar-nav > li > a").hover(function() {
@@ -71,7 +71,7 @@ $(document).ready(function () {
             760: {
                 items: 5
             },
-             // breakpoint from 992 up
+            // breakpoint from 992 up
             992: {
                 items: 8
             }
@@ -88,7 +88,7 @@ $(function () {
             e.preventDefault();
 
             const hash = this.hash;
-            
+
             if (hash === '#contact') {
                 $('html, body').animate({
                     scrollTop: $(hash).offset().top - 600
@@ -103,15 +103,14 @@ $(function () {
                 $('html, body').animate({
                     scrollTop: $(hash).offset().top
                 }, 1250, 'easeInOutExpo');
-            }           
+            }
         }
     });
 });
 
 // Close mobile menu on click
-$(function() {
-    $('.navbar-collapse ul li a').on("click touch", function() {
+$(function () {
+    $('.navbar-collapse ul li a').on("click touch", function () {
         $('.navbar-toggler').click();
-        // console.log("TOUCH")
     });
 });

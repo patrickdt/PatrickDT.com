@@ -57,8 +57,23 @@
     }
     
     .btn-general {
-        padding: 6px 22px 6px 22px;
-        font-size: 14px;
+        /* padding: 6px 22px 6px 22px;
+        font-size: 14px; */
+        /* justify-content: center; */
+    }
+
+    /* Aboout Me */
+    #about .content-title {
+        display: inline-grid;
+        justify-content: center;
+    }
+    
+    #about .content-title-underline {
+        margin: 0 auto 30px auto;
+    }
+
+    #about-btn {
+        text-align: center;
     }
 
     /* Experience logo */
@@ -68,6 +83,29 @@
         /* padding-bottom: 20px; */
     }
 
+    .experience-company h4, h5{
+        text-align: center;
+        margin-bottom: 2px;
+    }
+    
+    .experience-duration p {
+        text-align: center;
+        margin-bottom: 2px;
+    }
+    
+    .experience-title h5, h6{
+        text-align: center;
+        margin-bottom: 4px;
+    }
+
+    .experience-desc ul :nth-child(n+2){
+        /* display: none; */
+    }
+
+    /* Programs */
+    #programs {
+        padding: 0;
+    }
 }
 
 /* Extra Small Devices (Smaller devices) */
@@ -80,12 +118,29 @@
         font-size: 12px;
     }
 
+    .experience-title h5, h6{
+        color: #FC766A;
+    }
+
+    .experience-desc ul :nth-child(n+1){
+        display: none;
+    }
+
+
 }
 
 /* Extra Small Devices (Smaller devices) */
 @media (max-width: 320px) {
+
+    #about .content-title h3 {
+        margin-top: 30px;
+    }
+
+
     /* experience icon */
     /* TODO: Too big */
+
+
     .experience-icon img {
         max-width: 80px;
         width: 58px;

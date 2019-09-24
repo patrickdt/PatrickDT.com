@@ -16,7 +16,10 @@ Bluish gray: #4B6076
 background: #114357;  /* fallback for old browsers */
 /* background: -webkit-linear-gradient(to right, #F29492, #114357);  Chrome 10-25, Safari 5.1-6 */
 /* background: linear-gradient(to right, #F29492, #114357); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+/* font-family: 'Domine', serif;
+font-family: 'Archivo Black', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Nunito', sans-serif; */
 
 
 html, body {
@@ -30,12 +33,10 @@ body {
     background: linear-gradient(to bottom, #85D8CE, #FFFFFF); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); */
     
- 
-
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     /* background-image: url("../img/bg-home.jpg");    */
-    background-position: center;
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,1),#ffffff);
+    /* background-position: center; */
+    /* mask-image: linear-gradient(to bottom, rgba(0,0,0,1),#ffffff); */
     /* background-image: url("../img/deep-space.jpg"); */
 }
 
@@ -47,9 +48,33 @@ p {
 
 h3 {
     color: #41464b;
+    font-family: "Roboto", sans-serif;
+}
+
+
+h4, h5, h6 {
+    font-family: "Roboto", sans-serif;
 }
 
 body {
+    /* font-family: "Roboto", sans-serif; */
+    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Patua One', cursive; */
+}
+
+.navbar-brand h3 {
+    font-family: 'Patua One', cursive;
+}
+
+#banner .inner{
+    font-family: 'Patua One', cursive;
+}
+
+.navbar-nav {
+    font-family: "Roboto", sans-serif;
+}
+
+.btn-general {
     font-family: "Roboto", sans-serif;
 }
 
@@ -101,7 +126,7 @@ body {
 }
 
 #home-heading h2 {
-    color: black;
+    color: #262A3B;
     font-size: 55px;
     font-weight: 700;
     margin: 20px 0 20px 0;
@@ -120,7 +145,7 @@ body {
 .btn-general {
     border-color: #FFFFFF;
     border-width: 2px;
-    border-radius: 0px; 
+    border-radius: 8px; 
     /* to remove rounded edges */
     padding: 12px 26px 12px 26px;
     /* change this if needed */
@@ -154,7 +179,7 @@ body {
     right: 20px;
     font-size: 22px;
     padding: 3px 15px;
-    border-radius: 0;
+    border-radius: 6px;
     display: none;
 }
 
@@ -179,93 +204,74 @@ body {
     margin-left: auto; */
 }
 
-    #banner h2 {
-        -moz-transform: scale(1);
-        -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-        transform: scale(1);
-        -moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
-        -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
-        -ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
-        transition: transform 0.5s ease, opacity 0.5s ease;
-        display: inline-block;
-        font-size: 1.75em;
-        opacity: 1;
-        padding: 0.35em 1em;
-        position: relative;
-        z-index: 1;
-    }
+#banner h2 {
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
+    -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+    -ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
+    transition: transform 0.5s ease, opacity 1s ease;
+    display: inline-block;
+    font-size: 46px;
+    opacity: 1;
+    padding: 0.35em 1em;
+    position: relative;
+    z-index: 1;
+}
 
-        #banner h2:before, #banner h2:after {
-            -moz-transition: width 0.85s ease;
-            -webkit-transition: width 0.85s ease;
-            -ms-transition: width 0.85s ease;
-            transition: width 0.85s ease;
-            -moz-transition-delay: 0.25s;
-            -webkit-transition-delay: 0.25s;
-            -ms-transition-delay: 0.25s;
-            transition-delay: 0.25s;
-            background: #FC766A;
-            content: '';
-            display: block;
-            height: 2px;
-            position: absolute;
-            width: 100%;
-        }
-
-        #banner h2:before {
-            top: 0;
-            left: 0;
-        }
-
-        #banner h2:after {
-            bottom: 0;
-            right: 0;
-        }
-
-
-    #banner:after {
-        pointer-events: none;
-        -moz-transition: opacity 3s ease-in-out;
-        -webkit-transition: opacity 3s ease-in-out;
-        -ms-transition: opacity 3s ease-in-out;
-        transition: opacity 3s ease-in-out;
-        -moz-transition-delay: 1.25s;
-        -webkit-transition-delay: 1.25s;
-        -ms-transition-delay: 1.25s;
-        transition-delay: 1.25s;
+    #banner h2:before, #banner h2:after {
+        -moz-transition: width 0.85s ease;
+        -webkit-transition: width 0.85s ease;
+        -ms-transition: width 0.85s ease;
+        transition: width 1s ease;
+        -moz-transition-delay: 0.25s;
+        -webkit-transition-delay: 0.25s;
+        -ms-transition-delay: 0.25s;
+        transition-delay: 0.25s;
+        background: rgb(255, 153, 143);
         content: '';
-        background: white;
         display: block;
-        width: 100%;
-        height: 100%;
+        height: 3px;
         position: absolute;
-        left: 0;
-        top: 0;
-        opacity: 0;
+        width: 100%;
     }
 
-    @media screen and (max-width: 736px) {
+    #banner h2:before {
+        top: 0;
+        left: 0;
+    }
 
-        #banner {
-            padding: 7em 3em 5em 3em ;
-            height: auto;
-            min-height: 0;
+    #banner h2:after {
+        bottom: 0;
+        right: 0;
+    }
+
+#banner .inner {
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 736px) {
+
+    #banner {
+        padding: 7em 3em 5em 3em ;
+        height: auto;
+        min-height: 0;
+    }
+
+        #banner h2 {
+            font-size: 1.25em;
         }
 
-            #banner h2 {
-                font-size: 1.25em;
-            }
+        #banner br {
+            display: none;
+        }
 
-            #banner br {
-                display: none;
-            }
-
-            #banner .more {
-                display: none;
-            }
-
-    }
+        #banner .more {
+            display: none;
+        }
+}
 
     /* h2 appears slightly */
     body.is-preload #banner h2 {
@@ -298,8 +304,8 @@ body {
 }
 
 #home-btn {
-    -webkit-animation-delay: 1s;
-    -webkit-animation-duration: .5s;
+    -webkit-animation-delay: 1.8s;
+    -webkit-animation-duration: 1.4s;
 }
 
 /* Content (generic) */
@@ -320,7 +326,7 @@ body {
     height: 3px;
     background-color: #ADEFD1;
     /* margin: 0 auto 30 auto; */
-    margin: auto;
+    margin: 0 auto 30px auto
     /* margin-bottom: 30px */
 }
 
@@ -401,7 +407,7 @@ body {
 
 /* Experience */
 .experience-box {
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     /* margin-right: 75px;
     margin-left: -75px; */
 }
@@ -413,14 +419,35 @@ body {
     align-items: center;
 }
 
+.experience-company h4, h5{
+    color: #262A3B;
+    margin-bottom: 0;
+}
+
+.experience-duration p {
+    color: #4B6076;
+    margin: 0;
+}
+
+.experience-title h5, h6{
+    color: #262A3B;
+    /* margin: 0; */
+}
+
 .experience-content {
     display: block;
     justify-content: left;
+    color: #4B6076;
     /* align-items: center; */
 }
 
 .other-software-experience h4 {
+    margin: 50px 0 15px 0;
     text-align: center;
+}
+
+.other-software-experience .content-title-underline {
+    margin-bottom: 0;
 }
 
 .other-experiences .experience-content {
@@ -430,6 +457,7 @@ body {
     flex-direction: column;
     /* justify-content: right; */
     align-items: center;
+    margin-bottom: 0;
 }
 
 .experience-desc ul{
@@ -559,7 +587,7 @@ footer {
 }
 
 #footer-menu a:hover {
-    color: #34c6d3;
+    color: #FC766A;
 }
 
 /* Navigation */
@@ -640,7 +668,7 @@ footer {
 
 /* Projects */
 .projects-content-box {
-    padding: 0;
+    padding: 60px 0 60px 0;
 }
 
 .projects-gallery {
