@@ -170,9 +170,9 @@ h3, h4, h5, h6 {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-    -moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
-    -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
-    -ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
+    -moz-transition: -moz-transform 0.5s ease, opacity 1s ease;
+    -webkit-transition: -webkit-transform 0.5s ease, opacity 1s ease;
+    -ms-transition: -ms-transform 0.5s ease, opacity 1s ease;
     transition: transform 0.5s ease, opacity 1s ease;
     display: inline-block;
     font-size: 46px;
@@ -183,9 +183,9 @@ h3, h4, h5, h6 {
 }
 
 #banner h2:before, #banner h2:after {
-    -moz-transition: width 0.85s ease;
-    -webkit-transition: width 0.85s ease;
-    -ms-transition: width 0.85s ease;
+    -moz-transition: width 1s ease;
+    -webkit-transition: width 1s ease;
+    -ms-transition: width 1s ease;
     transition: width 1s ease;
     -moz-transition-delay: 0.25s;
     -webkit-transition-delay: 0.25s;
@@ -367,7 +367,7 @@ body.is-preload #banner h2:before, body.is-preload #banner h2:after {
 
 /* Experience */
 .experience-box {
-    padding: 40px 20px 0 20px;
+    padding: 20px 20px 0 20px;
 }
 
 .experience-logo {
@@ -383,7 +383,8 @@ body.is-preload #banner h2:before, body.is-preload #banner h2:after {
 }
 
 .experience-duration p {
-    color: #4B6076;
+    font-family: "Roboto", sans-serif;
+    color: #262A3B;
     margin: 0;
 }
 
