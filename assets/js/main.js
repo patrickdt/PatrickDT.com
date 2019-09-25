@@ -1,52 +1,40 @@
-/*==================
-Experiences
-==============*/
-
+// Show on load
 $(document).ready(function () {
-    // animate on scroll
-    new WOW().init();
-})
-
-// TODO: make an automatic carousel with the different logos of programming, design languages
-$(document).ready(function () {
-    $(".navbar-brand h3").css('color', '#00203F');
-    $(".navbar-nav > li > a").css('color', '#00203F');
-    $(".navbar-toggler").css('background-color', '#00203F');
-
-
-    // $(".navbar-nav > li > a:hover, .navbar-nav > li > a:focus")
-    // $(".navbar-nav > li > a").hover(function() {
-    //     $(this).css({"background-color": "none", "color": "#34c6d3"})
-    //   });
-    //   $(".navbar-nav > li > a").focus(function() {
-    //     $(this).css({"background-color": "none", "color": "#34c6d3"})
-    //   });
+    $(".navbar-brand h3").css('color', '#262A3B');
+    $(".navbar-nav > li > a").css('color', '#262A3B');
+    $(".navbar-toggler").css('background-color', '#262A3B');
 });
 
-// Navigation
-// Show/hide transparent black navigation
+/* Navigation */
+// Show/hide translucent navigation bar
 $(function () {
     $(window).scroll(function () {
         // if scroll top is less than 50 pixels, hide the nav bar
         if ($(this).scrollTop() < 50) {
             $("nav").removeClass("web-top-nav");
             $("navbar-toggler").removeClass("web-top-nav");
-            $(".navbar-brand h3").css('color', '#00203F')
-            $(".navbar-nav > li > a").css('color', '#00203F')
-            $(".navbar-toggler").css('background-color', '#00203F')
+            $(".navbar-brand h3").css('color', '#262A3B')
+            $(".navbar-nav > li > a").css('color', '#262A3B')
+            $(".navbar-toggler").css('background-color', '#262A3B')
             $("#back-to-top").fadeOut();
         }
-        else { // show
+        else { // else show the nav bar
             $("nav").addClass("web-top-nav");
-            $(".navbar-brand h3").css('color', '#4B6076')
-            $(".navbar-nav > li > a").css('color', '#4B6076')
+            $(".navbar-brand h3").css('color', '#FFFFFF')
+            $(".navbar-nav > li > a").css('color', '#FFFFFF')
             $(".navbar-toggler").css('background-color', 'rgba(0,0,0,0.1)');
             $("#back-to-top").fadeIn();
         }
     });
 });
 
-// Programs
+/* Experiences */
+$(document).ready(function () {
+    // animate on scroll
+    new WOW().init();
+})
+
+/* Programs */
 $(document).ready(function () {
     $("#programs-list").owlCarousel({
         animateOut: 'fadeOut',
@@ -79,11 +67,10 @@ $(document).ready(function () {
     });
 });
 
-
-// Smooth Scroll
+/* Smooth Scrolling */
 $(function () {
     $('a.smooth-scroll').on('click', function (e) {
-        // console.log(this.hash);  // prints id #home, #experiences, #about, #projects, etc
+        // console.log(this.hash);  // prints id #home, #about, #experiences, #projects, etc
         if (this.hash != '') {
             e.preventDefault();
 
@@ -91,12 +78,12 @@ $(function () {
 
             if (hash === '#contact') {
                 $('html, body').animate({
-                    scrollTop: $(hash).offset().top - 600
+                    scrollTop: $(hash).offset().top - 710
                 }, 1250, 'easeInOutExpo');
             }
             else if (hash !== '#home') {
                 $('html, body').animate({
-                    scrollTop: $(hash).offset().top - 55
+                    scrollTop: $(hash).offset().top - 65
                 }, 1250, 'easeInOutExpo');
             }
             else {

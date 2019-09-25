@@ -2,12 +2,31 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148723264-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-148723264-1');
+    </script>
+
     <meta charset="UTF-8">
+
+    <meta name="author" content="Patrick D. Tirtapraja">
+    <meta name="description" content="Patrick D. Tirtapraja">
+
+    <meta name="keywords"
+        content="patrick, d., tirtapraja, purdue, engineering, java, python, bootstrap, software engineering, SWE, software developer, SDE">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Patrick D. Tirtapraja</title>
 
-    <!-- favicon added -->
+    <!-- favicon -->
     <!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
 
     <!-- google fonts -->
@@ -15,15 +34,7 @@
         href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
         rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Domine:400,700&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
 
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/5c9f0847a0.js"></script>
@@ -42,6 +53,9 @@
     <link rel="stylesheet" href="assets/css/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl-carousel/owl.theme.default.min.css">
 
+    <!-- font mfizz -->
+    <link rel="stylesheet" href="assets/fonts/font-mfizz/font-mfizz.css">
+
     <!-- style CSS -->
     <link rel="stylesheet" href="assets/css/styles/style.css">
     <link rel="stylesheet" href="assets/css/styles/responsive.css">
@@ -49,12 +63,12 @@
 
 <body data-spy="scroll" class="is-preload" data-offset="65">
 
+    <!-- Navigation Bar -->
     <header>
         <nav class="navbar navbar-expand-lg fixed-top" role="navigation">
             <div class="container-fluid web-nav-wrapper">
                 <div class="nav-header">
                     <a class="navbar-brand" href="javascript:window.location.href=window.location.href">
-                        <!-- <img src="./img/logo.png" alt="logo"> -->
                         <!-- <img src="" alt="logo"> -->
                         <h3>PatrickDT</h3>
                     </a>
@@ -72,12 +86,11 @@
                             <a class="nav-link smooth-scroll" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link smooth-scroll" href="#about">About</a>
-                            </li>
+                            <a class="nav-link smooth-scroll" href="#about">About</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link smooth-scroll" href="#experiences">Experiences</a>
                         </li>
-                        
                         <li class="nav-item">
                             <a class="nav-link smooth-scroll" href="#projects">Projects</a>
                         </li>
@@ -90,22 +103,22 @@
         </nav>
     </header>
 
+    <!-- Home -->
     <section id="home">
         <div id="home-content-box" class="bg-parallax animated fadeIn">
-            <div id="home-heading" class="animated fadeIn">
-                
-                <div id="profile-pic" class="animated fadeInDown">
+            <div id="home-heading" class="wow fadeIn" data-wow-duration=".5s" data-wow-delay=".5s">
+                <div id="profile-pic" class="animated wow fadeInDown" data-wow-duration="1.4s" data-wow-delay="2.2s">
                     <img src="assets/img/home/profile-pic.JPG" alt="profile-pic">
                 </div>
-                
+
                 <section id="banner" class="banner-header">
                     <div class="inner">
-                        <h2>Patrick </br> D. </br> Tirtapraja</h2>
+                        <h2>Patrick D. Tirtapraja</h2>
                     </div>
-                    <div id="home-btn" class="animated fadeIn">
+                    <div id="home-btn" class="animated wow fadeIn" data-wow-duration="1.4s" data-wow-delay="1.8s">
                         <a class="btn btn-lg btn-general btn-blue smooth-scroll" href="#about" role="button"
-                            title="Learn More About Me!">
-                            Learn More About Me!
+                            title="Learn More About Me">
+                            Learn More About Me
                         </a>
                     </div>
                 </section>
@@ -116,29 +129,34 @@
 
     <!-- About -->
     <section id="about">
-        <!-- About right side w/ diagonal bg parallax -->
+        <!-- Diagonal parallax background -->
         <div id="about-bg-diagonal" class="bg-parallax"></div>
 
-        <!-- About left side w/ content -->
+        <!-- Content -->
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div id="about-content-box">
                         <div id="about-content-box-outer">
                             <div id="about-content-box-inner">
-                                <div class="content-title wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                                <div class="content-title wow fadeInDown" data-wow-duration="1s"
+                                    data-wow-delay=".5s">
                                     <h3>About Me</h3>
                                     <div class="content-title-underline"></div>
                                 </div>
 
                                 <div id="about-desc" class="content-title wow fadeInUp" data-wow-duration="1s"
                                     data-wow-delay=".5s">
-                                    Hello! I'm a software engineer and lowkey coffee enthusiast. Just graduated with a Bachelors in mechanical engineering from Purdue University with minors in computer science and mathematics.
+                                    Software Engineer. </br>Coffee enthusiast.
+                                    </br></br>
+                                    Just graduated with a Bachelor's in Mechanical Engineering from Purdue University with Minors in Computer
+                                    Science and Mathematics.
                                 </div>
-                                <!-- TODO: add animated class to all wow classes -->
-                                <div id="about-btn" class="wow animated fadeIn" data-wow-duration="1s"
+
+                                <div id="about-btn" class="wow fadeIn" data-wow-duration="1s"
                                     data-wow-delay="1s">
-                                    <a class="btn btn-lg btn-general btn-blue smooth-scroll" href="#experiences" role="button">Some of my Work Experience</a>
+                                    <a class="btn btn-lg btn-general btn-blue smooth-scroll" href="#experiences"
+                                        role="button">Some Of My Work Experience</a>
                                 </div>
                             </div>
                         </div>
@@ -158,12 +176,17 @@
 
             <div class="container">
                 <div class="row experience-box">
-                    <div class="col-md-5 experience-logo wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                        <a href="https://www.capitalonecareers.com/"><img src="assets/img/company-logos/capitalone-logo.png" alt="logo" id="capitalone-logo"></a>
+                    <div class="col-md-5 experience-logo wow fadeInLeft" data-wow-duration="1s"
+                        data-wow-delay="1s">
+                        <a href="https://www.capitalonecareers.com/"><img
+                                src="assets/img/company-logos/capitalone-logo.png" alt="logo" id="capitalone-logo"></a>
                     </div>
-                    <div class="col-md-7 experience-content wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="col-md-7 experience-content wow fadeInRight" data-wow-duration="1s"
+                        data-wow-delay="1s">
                         <div class="experience-company">
-                            <h4>Capital One</h4>
+                            <h4>Capital One - <i class="fab fa-js-square"></i> <i class="icon-bootstrap"></i> <i
+                                    class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i
+                                    class="icon-jquery"></i> <i class="icon-git"></i></h4>
                         </div>
 
                         <div class="experience-duration">
@@ -172,23 +195,25 @@
 
                         <div class="experience-title">
                             <h5>Full Stack Software Engineer (currently in training)</h5>
+                            <!-- Add spacing below -->
                         </div>
                         <div class="experience-desc">
                             <ul>
-                                <!-- <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li> -->
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="row experience-box wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
-                    <div class="col-md-5 experience-logo wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                            <a href="https://corporate.ford.com/company.html"><img src="assets/img/company-logos/ford-logo.png" alt="logo" id="ford-logo"></a>
+                    <div class="col-md-5 experience-logo wow fadeInLeft" data-wow-duration="1s"
+                        data-wow-delay="1s">
+                        <a href="https://corporate.ford.com/company.html"><img
+                                src="assets/img/company-logos/ford-logo.png" alt="logo" id="ford-logo"></a>
                     </div>
-                    <div class="col-md-7 experience-content wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="col-md-7 experience-content wow fadeInRight" data-wow-duration="1s"
+                        data-wow-delay="1s">
                         <div class="experience-company">
-                            <h4>Ford Motor Company</h4>
+                            <h4>Ford Motor Company - <i class="icon-3dprint"></i> <i class="fas fa-wrench"></i> <i
+                                    class="icon-line-graph"></i></h4>
                         </div>
 
                         <div class="experience-duration">
@@ -222,11 +247,18 @@
 
                     <div class="row experience-box wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
                         <div class="col-md-5 experience-logo wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                                <a href="https://www.sensorhound.com/"><img src="assets/img/company-logos/sensorhound-logo.png" alt="logo" class="other-company-logo"></a>
+                            <a href="https://www.sensorhound.com/"><img
+                                    src="assets/img/company-logos/sensorhound-logo.png" alt="logo"
+                                    class="other-company-logo"></a>
                         </div>
-                        <div class="col-md-7 experience-content wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+                        <div class="col-md-7 experience-content wow fadeInRight" data-wow-duration="1s"
+                            data-wow-delay="1s">
                             <div class="experience-company">
-                                <h5>SensorHound</h5>
+                                <h5>SensorHound - <i class="fab fa-java"></i> <i class="icon-spring"></i> <i
+                                        class="icon-mysql"></i> <i class="icon-mongodb"></i> <i
+                                        class="icon-cassandra"></i> <i class="icon-apache"></i> <i class="icon-aws"> <i
+                                            class="icon-git"></i></i>
+                                </h5>
                             </div>
 
                             <div class="experience-duration">
@@ -234,9 +266,9 @@
                             </div>
 
                             <div class="experience-title">
-                                <h6>Backend Developer Intern (Java)</h6>
+                                <h6>Software Engineering Intern, Backend Developer and Cloud Deployer (Java)</h6>
                             </div>
-                            
+
                             <div class="experience-desc">
                                 <ul>
                                     <li>Implemented security layer leveraging KeyCloak, Oauth2, OpenID, and SSL/TLS
@@ -254,23 +286,29 @@
                     </div>
 
                     <div class="row experience-box wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
-                        <div class="col-md-5 experience-logo wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                            <a href="https://whizkey.ae/"><img src="assets/img/company-logos/whizkey-logo.png" alt="logo" class="other-company-logo"></a>
+                        <div class="col-md-5 experience-logo wow fadeInLeft" data-wow-duration="1s"
+                            data-wow-delay="1s">
+                            <a href="https://whizkey.ae/"><img src="assets/img/company-logos/whizkey-logo.png"
+                                    alt="logo" class="other-company-logo"></a>
                         </div>
-                        <div class="col-md-7 experience-content wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+                        <div class="col-md-7 experience-content wow fadeInRight" data-wow-duration="1s"
+                            data-wow-delay="1s">
                             <div class="experience-company">
-                                <h5>WhizKey</h5>
+                                <h5>WhizKey - <i class="fab fa-python"></i> <i class="icon-mysql"></i> <i
+                                        class="icon-aws"> <i class="icon-git"></i></i></h5>
                             </div>
                             <div class="experience-duration">
-                                    <p>January 2018 - May 2018</p>
-                                </div>
+                                <p>January 2018 - May 2018</p>
+                            </div>
                             <div class="experience-title">
-                                <h6>Backend Developer Intern (Python)</h6>
+                                <h6>Software Engineering Intern, Backend Developer and Tester (Python)</h6>
                             </div>
                             <div class="experience-desc">
                                 <ul>
-                                    <li>Designed database architecture for enterprise web application running MySQL Database type which resulted in more systematized data collection</li>
-                                    <li>Implemented backend business logic for customer facing web application utilizing Flask, SQL, MySQL, SQLAlchemy, and Git</li>
+                                    <li>Designed database architecture for enterprise web application running MySQL
+                                        Database type which resulted in more systematized data collection</li>
+                                    <li>Implemented backend business logic for customer facing web application utilizing
+                                        Flask, SQL, MySQL, SQLAlchemy, and Git</li>
                                 </ul>
                             </div>
                         </div>
@@ -300,8 +338,7 @@
                 </li>
                 <li>
                     <figure class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
-                        <img src="assets/img/projects-imgs/pytorch.png"
-                            alt="Deep Learning with Tensorflow and Python">
+                        <img src="assets/img/projects-imgs/pytorch.png" alt="Deep Learning with Tensorflow and Python">
                         <figcaption>
                             <h3>Deep Learning with Pytorch</h3>
                             <span>Classification of MNIST dataset</span>
@@ -357,57 +394,64 @@
     <!-- Programming Languages -->
     <section id="programs">
         <div class="content-box">
-            <div class="content-title wow animated fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
-                <h3>Key Skills and Software Programs Used</h3>
+            <div class="content-title wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
+                <h3>Programs Used</h3>
                 <div class="content-title-underline"></div>
             </div>
 
             <div class="container">
-                <div class="row wow animated bounceInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+                <div class="row wow bounceInLeft" data-wow-duration="1s" data-wow-delay=".5s">
                     <div class="col-md-12">
                         <div id="programs-list" class="owl-carousel owl-theme">
                             <div class="program">
                                 <img src="assets/img/programs-icons/js-logo.jpg" class="img-responsive" alt="program">
                             </div>
                             <div class="program">
-                            <img src="assets/img/programs-icons/html5-logo.jpg" class="img-responsive" alt="program">
+                                <img src="assets/img/programs-icons/html5-logo.jpg" class="img-responsive"
+                                    alt="program">
                             </div>
                             <div class="program">
                                 <img src="assets/img/programs-icons/css3-logo.jpg" class="img-responsive" alt="program">
                             </div>
-                            
                             <div class="program">
-                                <img src="assets/img/programs-icons/catia-logo.jpg" class="img-responsive" alt="program">
+                                <img src="assets/img/programs-icons/catia-logo.jpg" class="img-responsive"
+                                    alt="program">
                             </div>
                             <div class="program">
-                                <img src="assets/img/programs-icons/wildfly-logo.jpg" class="img-responsive" alt="program">
+                                <img src="assets/img/programs-icons/wildfly-logo.jpg" class="img-responsive"
+                                    alt="program">
                             </div>
                             <div class="program">
                                 <img src="assets/img/programs-icons/java-logo.jpg" class="img-responsive" alt="program">
                             </div>
                             <div class="program">
-                                <img src="assets/img/programs-icons/python-logo.jpg" class="img-responsive" alt="program">
+                                <img src="assets/img/programs-icons/python-logo.jpg" class="img-responsive"
+                                    alt="program">
                             </div>
                             <div class="program">
-                                <img src="assets/img/programs-icons/mysql-logo.jpg" class="img-responsive" alt="program">
+                                <img src="assets/img/programs-icons/mysql-logo.jpg" class="img-responsive"
+                                    alt="program">
                             </div>
                             <div class="program">
-                                <img src="assets/img/programs-icons/cassandra-logo.jpg" class="img-responsive" alt="program">
+                                <img src="assets/img/programs-icons/cassandra-logo.jpg" class="img-responsive"
+                                    alt="program">
                             </div>
                             <div class="program">
-                                <img src="assets/img/programs-icons/solidworks-logo.jpg" class="img-responsive" alt="program">
+                                <img src="assets/img/programs-icons/solidworks-logo.jpg" class="img-responsive"
+                                    alt="program">
                             </div>
                             <div class="program">
-                                <img src="assets/img/programs-icons/flask-logo.jpg" class="img-responsive" alt="program">
+                                <img src="assets/img/programs-icons/flask-logo.jpg" class="img-responsive"
+                                    alt="program">
                             </div>
                             <div class="program">
-                                <img src="assets/img/programs-icons/arduino-logo.jpg" class="img-responsive" alt="program">
+                                <img src="assets/img/programs-icons/arduino-logo.jpg" class="img-responsive"
+                                    alt="program">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
 
@@ -420,12 +464,14 @@
                         <div id="contact-info">
                             <h3>Let's get in touch.</h3>
                             <ul class="social-media-list">
-                                <li><a href="https://www.linkedin.com/in/patrickdt/" class="social-icon icon-white"><i class="fab fa-linkedin fa-2x"></i></a></li>
-                                <li><a href="https://www.facebook.com/patrick.d.tirtapraja" class="social-icon icon-white"><i class="fab fa-facebook fa-2x"></i></a></li>
-                                <!-- <li><a href="#" class="social-icon icon-white"><i class="fab fa-instagram fa-2x"></i></a></li>
-                                <li><a href="#" class="social-icon icon-white"><i class="fab fa-google-plus fa-2x"></i></a></li> -->
-                                <li><a href="https://github.com/patrickdt" class="social-icon icon-white"><i class="fab fa-github fa-2x"></i></a></li>
-                                <li><a href="mailto:patrick.tpraja@gmail.com" class="social-icon icon-white"><i class="fas fa-envelope fa-2x"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/patrickdt/" class="social-icon icon-white"><i
+                                            class="fab fa-linkedin fa-2x"></i></a></li>
+                                <li><a href="https://www.facebook.com/patrick.d.tirtapraja"
+                                        class="social-icon icon-white"><i class="fab fa-facebook fa-2x"></i></a></li>
+                                <li><a href="https://github.com/patrickdt" class="social-icon icon-white"><i
+                                            class="fab fa-github fa-2x"></i></a></li>
+                                <li><a href="mailto:patrick.tpraja@gmail.com" class="social-icon icon-white"><i
+                                            class="fas fa-envelope fa-2x"></i></a></li>
                             </ul>
                         </div>
                     </div>
