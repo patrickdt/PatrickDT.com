@@ -26,6 +26,10 @@ p {
     font-weight: 300;
 }
 
+::-moz-selection {
+    background: #FC766A; /* WebKit/Blink Browsers */
+}
+
 ::selection {
     background: #FC766A; /* WebKit/Blink Browsers */
 }
@@ -57,14 +61,26 @@ h3, h4, h5, h6 {
 /* Home */
 #home {
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 #home-content-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 #home-heading h2 {
@@ -75,8 +91,12 @@ h3, h4, h5, h6 {
 }
 
 #profile-pic {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center; 
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; 
 }
 
 #profile-pic img {
@@ -88,6 +108,8 @@ h3, h4, h5, h6 {
 /* Navigation */
 .navbar {
     padding: 20px 0;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
 }
 
@@ -128,9 +150,15 @@ h3, h4, h5, h6 {
 }
 
 .navbar-toggler-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .fa.fa-navicon {
@@ -138,6 +166,8 @@ h3, h4, h5, h6 {
 }
 
 .nav-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-left: auto;
 }
@@ -149,30 +179,36 @@ h3, h4, h5, h6 {
 /* Banner */
 #banner {
     display: -moz-flex;
-    display: -webkit-flex;
     display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -moz-flex-direction: column;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     -moz-justify-content: center;
-    -webkit-justify-content: center;
     -ms-justify-content: center;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
 }
 
 #banner h2 {
-    -moz-transform: scale(1);
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-    -moz-transition: -moz-transform 0.5s ease, opacity 1s ease;
     -webkit-transition: -webkit-transform 0.5s ease, opacity 1s ease;
-    -ms-transition: -ms-transform 0.5s ease, opacity 1s ease;
+    -webkit-transition: opacity 1s ease, -webkit-transform 0.5s ease;
+    transition: opacity 1s ease, -webkit-transform 0.5s ease;
+    -o-transition: transform 0.5s ease, opacity 1s ease;
     transition: transform 0.5s ease, opacity 1s ease;
+    transition: transform 0.5s ease, opacity 1s ease, -webkit-transform 0.5s ease;
     display: inline-block;
     font-size: 46px;
     opacity: 1;
@@ -182,14 +218,12 @@ h3, h4, h5, h6 {
 }
 
 #banner h2:before, #banner h2:after {
-    -moz-transition: width 1s ease;
     -webkit-transition: width 1s ease;
-    -ms-transition: width 1s ease;
+    -o-transition: width 1s ease;
     transition: width 1s ease;
-    -moz-transition-delay: 0.25s;
     -webkit-transition-delay: 0.25s;
-    -ms-transition-delay: 0.25s;
-    transition-delay: 0.25s;
+    -o-transition-delay: 0.25s;
+       transition-delay: 0.25s;
     background: rgb(255, 153, 143);
     content: '';
     display: block;
@@ -215,7 +249,6 @@ h3, h4, h5, h6 {
 
 /* h2 appears slightly */
 body.is-preload #banner h2 {
-    -moz-transform: scale(0.95);
     -webkit-transform: scale(0.95);
     -ms-transform: scale(0.95);
     transform: scale(0.95);
@@ -321,14 +354,23 @@ body.is-preload #banner h2:before, body.is-preload #banner h2:after {
 #about-content-box-outer {
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex
    
 }
 
 #about-content-box-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center; 
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; 
 }
 
 #about .content-title h3 {
@@ -370,10 +412,19 @@ body.is-preload #banner h2:before, body.is-preload #banner h2:after {
 }
 
 .experience-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .experience-company h4, h5{
@@ -393,7 +444,9 @@ body.is-preload #banner h2:before, body.is-preload #banner h2:after {
 
 .experience-content {
     display: block;
-    justify-content: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
     color: #4B6076;
 }
 
@@ -409,9 +462,16 @@ body.is-preload #banner h2:before, body.is-preload #banner h2:after {
 .other-experiences .experience-content {
     max-width: 700px;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 0;
 }
 
@@ -460,8 +520,12 @@ body.is-preload #banner h2:before, body.is-preload #banner h2:after {
 
 /* Social Media */
 .social-media-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .social-media-list {

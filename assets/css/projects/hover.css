@@ -66,14 +66,15 @@
 .projects-hover figure img {
 	z-index: 10;
 	-webkit-transition: -webkit-transform 0.4s;
-	-moz-transition: -moz-transform 0.4s;
+	transition: -webkit-transform 0.4s;
+	-o-transition: transform 0.4s;
 	transition: transform 0.4s;
+	transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
 .no-touch .projects-hover figure:hover img,
 .projects-hover figure.cs-hover img {
 	-webkit-transform: scale(0.4);
-	-moz-transform: scale(0.4);
 	-ms-transform: scale(0.4);
 	transform: scale(0.4);
 }
@@ -83,21 +84,21 @@
 	width: 100%;
 	opacity: 0;
 	-webkit-transform: scale(0.7);
-	-moz-transform: scale(0.7);
 	-ms-transform: scale(0.7);
 	transform: scale(0.7);
 	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
 	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
-	-moz-transition: -moz-transform 0.4s, opacity 0.4s;
+	-webkit-transition: opacity 0.4s, -webkit-transform 0.4s;
+	transition: opacity 0.4s, -webkit-transform 0.4s;
+	-o-transition: transform 0.4s, opacity 0.4s;
 	transition: transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s, -webkit-transform 0.4s;
 }
 
 .no-touch .projects-hover figure:hover figcaption,
 .projects-hover figure.cs-hover figcaption {
 	-webkit-transform: scale(1.15);
-	-moz-transform: scale(1.15);
 	-ms-transform: scale(1.15);
 	transform: scale(1.15);
 	opacity: 1;
@@ -107,14 +108,4 @@
 	position: absolute;
 	bottom: 20px;
 	right: 20px;
-}
-
-@media screen and (max-width: 31.5em) {
-	.projects-grid {
-		padding: 10px 10px 100px 10px;
-	}
-	.projects-grid li {
-		width: 100%;
-		min-width: 300px;
-	}
 }
