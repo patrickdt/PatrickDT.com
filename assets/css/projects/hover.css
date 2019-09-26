@@ -10,7 +10,7 @@
 	text-align: center;
 }
 
-.projects-grid li {
+.projects-grid .projects-list {
 	display: inline-block;
 	width: 380px;
 	margin: 0;

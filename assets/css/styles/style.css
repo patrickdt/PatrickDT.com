@@ -138,9 +138,8 @@ h3, h4, h5, h6 {
 }
 
 .nav-item {
-    display:flex;
+    display: flex;
     margin-left: auto;
-    align-items: left;
 }
 
 .web-top-nav ul.navbar-nav > li > a.active {
