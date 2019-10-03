@@ -12,7 +12,7 @@
 
 .projects-grid .projects-list {
 	display: inline-block;
-	width: 380px;
+	max-width: 380px;
 	margin: 0;
 	padding: 20px;
 	text-align: left;
@@ -28,7 +28,7 @@
 	max-width: 100%;
 	display: block;
 	position: relative;
-	border-radius: 10px;
+	border-radius: 18px;
 }
 
 .projects-grid figcaption {
@@ -38,16 +38,23 @@
 	left: 0;
 	padding: 20px;
 	border-radius: 8px;
-	background: #4B6076;
+	/* background: #4B6076; */
+	background: rgb(107, 137, 168);
+	/* background: rgba(101, 190, 171, 0.8); */
 	color: #FC766A;
 }
 
 .projects-grid figcaption h3 {
 	font-size: 20px;
 	margin: 0;
-	padding: 0;
+	padding: 0px 0 8px 0;
 	color: #fff;
 }
+
+.projects-grid figcaption p {
+    color: #FFFFFF;
+}
+
 
 .projects-grid figcaption span:before {
 	content: '';
@@ -62,6 +69,7 @@
 	color: #fff;
 }
 
+
 /* Hover */
 .projects-hover figure img {
 	z-index: 10;
@@ -74,9 +82,16 @@
 
 .no-touch .projects-hover figure:hover img,
 .projects-hover figure.cs-hover img {
-	-webkit-transform: scale(0.4);
-	-ms-transform: scale(0.4);
-	transform: scale(0.4);
+	-webkit-transform: scale(0.3);
+	-ms-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.no-touch .projects-hover figure:active img,
+.projects-hover figure.cs-hover img {
+	-webkit-transform: scale(0.3);
+	-ms-transform: scale(0.3);
+	transform: scale(0.3);
 }
 
 .projects-hover figcaption {
@@ -104,8 +119,17 @@
 	opacity: 1;
 }
 
+.no-touch .projects-hover figure:active figcaption,
+.projects-hover figure.cs-hover figcaption {
+	-webkit-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	transform: scale(1.15);
+	opacity: 1;
+}
+
 .projects-hover figure a {
 	position: absolute;
 	bottom: 20px;
 	right: 20px;
+	margin: 6px
 }
