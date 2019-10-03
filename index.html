@@ -20,7 +20,7 @@
     <meta name="keywords"
         content="patrick, d., tirtapraja, purdue, engineering, java, python, bootstrap, software engineering, SWE, software developer, SDE">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -61,17 +61,18 @@
     <link rel="stylesheet" href="assets/css/styles/responsive.css">
 </head>
 
-<body data-spy="scroll" class="is-preload" data-offset="65">
+<body data-spy="scroll" class="is-preload" data-target=".navbar" data-offset="65">
 
     <!-- Navigation Bar -->
     <header>
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid web-nav-wrapper">
                 <div class="nav-header">
-                    <a class="navbar-brand" href="javascript:window.location.href=window.location.href">
+                    <a class="navbar-brand" href="https://patrickdt.com">
                         <h3>PatrickDT</h3>
                     </a>
                 </div>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#web-menu"
                     aria-controls="web-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon">
@@ -80,7 +81,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="web-menu">
-                    <ul class="nav navbar-nav ">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link smooth-scroll" href="#home">Home</a>
                         </li>
@@ -185,20 +186,21 @@
                                     class="icon-jquery"></i> <i class="icon-git"></i></h4>
                         </div>
 
+                        <div class="experience-title">
+                            <h5>Full Stack Software Engineer (currently in training)</h5>
+                        </div>
+
                         <div class="experience-duration">
                             <p>Aug 2019 - Present</p>
                         </div>
 
-                        <div class="experience-title">
-                            <h5>Full Stack Software Engineer (currently in training)</h5>
-                        </div>
                         <div class="experience-desc">
                             <ul>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="row experience-box wow fadeIn mt-2" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row experience-box">
                     <div class="col-md-5 experience-logo wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                         <a href="https://corporate.ford.com/company.html"><img
                                 src="assets/img/company-logos/ford-logo.png" alt="logo" id="ford-logo"></a>
@@ -208,13 +210,14 @@
                             <h4>Ford Motor Company - <i class="icon-3dprint"></i> <i class="fas fa-wrench"></i></h4>
                         </div>
 
+                        <div class="experience-title">
+                            <h5>Product Development Engineer Intern</h5>
+                        </div>
+
                         <div class="experience-duration">
                             <p>May 2017 - Aug 2017</p>
                         </div>
 
-                        <div class="experience-title">
-                            <h5>Product Development Engineer Intern</h5>
-                        </div>
                         <div class="experience-desc">
                             <ul>
                                 <li>Tracked liftgate progression and drainage performance through analysis of data to be
@@ -236,72 +239,69 @@
                 <div class="other-software-experience wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
                     <h4>Other Software Involvements</h4>
                     <div class="content-title-underline"></div>
+                </div>
 
-                    <div class="row experience-box wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
-                        <div class="col-md-5 experience-logo wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                            <a href="https://www.sensorhound.com/"><img
-                                    src="assets/img/company-logos/sensorhound-logo.png" alt="logo"
-                                    class="other-company-logo"></a>
+                <div class="row experience-box">
+                    <div class="col-md-5 experience-logo wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                        <a href="https://www.sensorhound.com/"><img src="assets/img/company-logos/sensorhound-logo.png"
+                                alt="logo" class="other-company-logo"></a>
+                    </div>
+                    <div class="col-md-7 experience-content wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+                        <div class="experience-company">
+                            <h4>SensorHound - <i class="fab fa-java"></i> <i class="icon-spring"></i> <i
+                                    class="icon-mysql"></i> <i class="icon-mongodb"></i> <i class="icon-cassandra"></i>
+                                <i class="icon-apache"></i> <i class="icon-aws"> <i class="icon-git"></i></i>
+                            </h4>
                         </div>
-                        <div class="col-md-7 experience-content wow fadeInRight" data-wow-duration="1s"
-                            data-wow-delay="1s">
-                            <div class="experience-company">
-                                <h5>SensorHound - <i class="fab fa-java"></i> <i class="icon-spring"></i> <i
-                                        class="icon-mysql"></i> <i class="icon-mongodb"></i> <i
-                                        class="icon-cassandra"></i> <i class="icon-apache"></i> <i class="icon-aws"> <i
-                                            class="icon-git"></i></i>
-                                </h5>
-                            </div>
 
-                            <div class="experience-duration">
-                                <p>May 2018 - August 2018</p>
-                            </div>
+                        <div class="experience-title">
+                            <h5>Software Engineering Intern, Backend Developer (Java)</h5>
+                        </div>
 
-                            <div class="experience-title">
-                                <h6>Software Engineering Intern, Backend Developer and Cloud Deployer (Java)</h6>
-                            </div>
+                        <div class="experience-duration">
+                            <p>May 2018 - August 2018</p>
+                        </div>
 
-                            <div class="experience-desc">
-                                <ul>
-                                    <li>Implemented security layer leveraging KeyCloak, Oauth2, OpenID, and SSL/TLS
-                                        enabling company’s
-                                        federated user access model</li>
-                                    <li>Exposed RESTful endpoints for end-to-end data ingestion handling a wide array of
-                                        disparate data
-                                        ultimately driving greater business value from richer datasets</li>
-                                    <li>Configured multiple SQL and NoSQL databases on EC2 instances to handle both
-                                        relational and bulk
-                                        datasets more dynamically</li>
-                                </ul>
-                            </div>
+                        <div class="experience-desc">
+                            <ul>
+                                <li>Implemented security layer leveraging KeyCloak, Oauth2, OpenID, and SSL/TLS
+                                    enabling company’s
+                                    federated user access model</li>
+                                <li>Exposed RESTful endpoints for end-to-end data ingestion handling a wide array of
+                                    disparate data
+                                    ultimately driving greater business value from richer datasets</li>
+                                <li>Configured multiple SQL and NoSQL databases on EC2 instances to handle both
+                                    relational and bulk
+                                    datasets more dynamically</li>
+                            </ul>
                         </div>
                     </div>
+                </div>
 
-                    <div class="row experience-box wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
-                        <div class="col-md-5 experience-logo wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                            <a href="https://whizkey.ae/"><img src="assets/img/company-logos/whizkey-logo.png"
-                                    alt="logo" class="other-company-logo"></a>
+                <div class="row experience-box">
+                    <div class="col-md-5 experience-logo wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                        <a href="https://whizkey.ae/"><img src="assets/img/company-logos/whizkey-logo.png" alt="logo"
+                                class="other-company-logo"></a>
+                    </div>
+                    <div class="col-md-7 experience-content wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+                        <div class="experience-company">
+                            <h4>WhizKey - <i class="fab fa-python"></i> <i class="icon-mysql"></i> <i class="icon-aws">
+                                    <i class="icon-git"></i></i></h4>
                         </div>
-                        <div class="col-md-7 experience-content wow fadeInRight" data-wow-duration="1s"
-                            data-wow-delay="1s">
-                            <div class="experience-company">
-                                <h5>WhizKey - <i class="fab fa-python"></i> <i class="icon-mysql"></i> <i
-                                        class="icon-aws"> <i class="icon-git"></i></i></h5>
-                            </div>
-                            <div class="experience-duration">
-                                <p>January 2018 - May 2018</p>
-                            </div>
-                            <div class="experience-title">
-                                <h6>Software Engineering Intern, Backend Developer and Tester (Python)</h6>
-                            </div>
-                            <div class="experience-desc">
-                                <ul>
-                                    <li>Designed database architecture for enterprise web application running MySQL
-                                        Database type which resulted in more systematized data collection</li>
-                                    <li>Implemented backend business logic for customer facing web application utilizing
-                                        Flask, SQL, MySQL, SQLAlchemy, and Git</li>
-                                </ul>
-                            </div>
+
+                        <div class="experience-title">
+                            <h5>Software Engineering Intern, Backend Developer (Python)</h5>
+                        </div>
+                        <div class="experience-duration">
+                            <p>January 2018 - May 2018</p>
+                        </div>
+                        <div class="experience-desc">
+                            <ul>
+                                <li>Designed database architecture for enterprise web application running MySQL
+                                    Database type which resulted in more systematized data collection</li>
+                                <li>Implemented backend business logic for customer facing web application utilizing
+                                    Flask, SQL, MySQL, SQLAlchemy, and Git</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -323,7 +323,7 @@
                         <img src="assets/img/projects-imgs/cdesignlab.png" alt="C Design Lab">
                         <figcaption>
                             <h3>C Design Lab Deep Learning</h3>
-                            <span>Conditional Generative Adversarial Nets</span>
+                            <p>Conditional Generative Adversarial Nets</p>
                             <a href="https://engineering.purdue.edu/cdesign/wp/">Take a look</a>
                         </figcaption>
                     </figure>
@@ -333,7 +333,7 @@
                         <img src="assets/img/projects-imgs/pytorch.png" alt="Deep Learning with Tensorflow and Python">
                         <figcaption>
                             <h3>Deep Learning with Pytorch</h3>
-                            <span>Classification of MNIST dataset</span>
+                            <p>Classification of MNIST dataset</p>
                             <a href="assets/documents/deep_learning_with_pyTorch.pdf">Take a look</a>
                         </figcaption>
                     </figure>
@@ -343,7 +343,7 @@
                         <img src="assets/img/projects-imgs/nanohub.png" alt="Nanohub Fracture Analysis">
                         <figcaption>
                             <h3>Nanohub Research</h3>
-                            <span>Fracture propagation analysis</span>
+                            <p>Fracture propagation analysis</p>
                             <a href="https://nanohub.org/resources/cracktestpfdm">Take a look</a>
                         </figcaption>
                     </figure>
@@ -353,7 +353,7 @@
                         <img src="assets/img/projects-imgs/cfd.png" alt="Computational Fluid Dynamics">
                         <figcaption>
                             <h3>Computational Fluid Dynamics</h3>
-                            <span>Analysis with MATLAB's Vector and Surf Plots</span>
+                            <p>Analysis with MATLAB's Vector and Surf Plots</p>
                             <a href="assets/documents/me_309_cfd_report.pdf">Take a look</a>
                         </figcaption>
                     </figure>
@@ -364,7 +364,7 @@
                             alt="Senior Design 2019 - Tilting Umbrella">
                         <figcaption>
                             <h3>Senior Design</h3>
-                            <span>Tilting Umbrella</span>
+                            <p>Tilting Umbrella</p>
                             <a href="assets/documents/senior_design_final_report.pdf">Take a look</a>
                         </figcaption>
                     </figure>
@@ -374,7 +374,7 @@
                         <img src="assets/img/projects-imgs/web-design.png" alt="Travel Website Practice">
                         <figcaption>
                             <h3>Travel Site Practice</h3>
-                            <span>Using flex and media queries</span>
+                            <p>Using flex and media queries</p>
                             <a href="https://patrickdt.github.io/travel-site/">Take a look</a>
                         </figcaption>
                     </figure>
@@ -387,13 +387,53 @@
     <section id="programs">
         <div class="content-box">
             <div class="content-title wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
-                <h3>Programs Used</h3>
+                <h3>Key Skills</h3>
                 <div class="content-title-underline"></div>
             </div>
 
             <div class="container">
                 <div class="row wow bounceInLeft" data-wow-duration="1s" data-wow-delay=".5s">
-                    <div class="col-md-12">
+                    <div class="col-md-12 programs-list">
+                        <div class="program">
+                            <img src="assets/img/programs-icons/java-logo.jpg" class="img-responsive bs-tooltip-top" alt="program" data-toggle="tooltip" data-placement="top" title="Java">
+                        </div>
+                        <div class="program">
+                            <img src="assets/img/programs-icons/python-logo.jpg" class="img-responsive" alt="program" data-toggle="tooltip" data-placement="top" title="Python">
+                        </div>
+                        <div class="program">
+                            <img src="assets/img/programs-icons/js-logo.jpg" class="img-responsive" alt="program" data-toggle="tooltip" data-placement="top" title="JavaScript">
+                        </div>
+                        <div class="program">
+                            <img src="assets/img/programs-icons/html5-logo.jpg" class="img-responsive" alt="program" data-toggle="tooltip" data-placement="top" title="HTML">
+                        </div>
+                        <div class="program">
+                            <img src="assets/img/programs-icons/css3-logo.jpg" class="img-responsive" alt="program" data-toggle="tooltip" data-placement="top" title="CSS">
+                        </div>
+                        <div class="program">
+                            <img src="assets/img/programs-icons/wildfly-logo.jpg" class="img-responsive" alt="program" data-toggle="tooltip" data-placement="top" title="JBoss WildFly">
+                        </div>
+                        <div class="program">
+                            <img src="assets/img/programs-icons/catia-logo.jpg" class="img-responsive" alt="program" data-toggle="tooltip" data-placement="bottom" title="CATIA">
+                        </div>
+                        <div class="program">
+                            <img src="assets/img/programs-icons/solidworks-logo.jpg" class="img-responsive"
+                                alt="program" data-toggle="tooltip" data-placement="bottom" title="SolidWorks">
+                        </div>
+                        <div class="program">
+                            <img src="assets/img/programs-icons/mysql-logo.jpg" class="img-responsive" alt="program" data-toggle="tooltip" data-placement="bottom" title="MySQL">
+                        </div>
+                        <div class="program">
+                            <img src="assets/img/programs-icons/cassandra-logo.jpg" class="img-responsive"
+                                alt="program" data-toggle="tooltip" data-placement="bottom" title="Apache Cassandra">
+                        </div>
+                        <div class="program">
+                            <img src="assets/img/programs-icons/flask-logo.jpg" class="img-responsive" alt="program" data-toggle="tooltip" data-placement="bottom" title="Flask Web Framework">
+                        </div>
+                        <div class="program">
+                            <img src="assets/img/programs-icons/arduino-logo.jpg" class="img-responsive" alt="program" data-toggle="tooltip" data-placement="bottom" title="Arduino">
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-12">
                         <div id="programs-list" class="owl-carousel owl-theme">
                             <div class="program">
                                 <img src="assets/img/programs-icons/js-logo.jpg" class="img-responsive" alt="program">
@@ -441,7 +481,7 @@
                                     alt="program">
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -455,6 +495,7 @@
                     <div class="col-md-12">
                         <div id="contact-info">
                             <h3>Let's get in touch.</h3>
+                            <!-- <div class="contact-title-underline"></div> -->
                             <ul class="social-media-list">
                                 <li><a href="https://www.linkedin.com/in/patrickdt/" class="social-icon icon-white"><i
                                             class="fab fa-linkedin fa-2x"></i></a></li>
