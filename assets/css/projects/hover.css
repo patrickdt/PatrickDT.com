@@ -32,66 +32,61 @@
 }
 
 .projects-grid figcaption {
-	font-size: 16px;
 	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 20px;
+	padding: 13%;
 	border-radius: 8px;
-	/* background: #4B6076; */
-	background: rgb(107, 137, 168);
-	/* background: rgba(101, 190, 171, 0.8); */
-	color: #FC766A;
+	background: rgb(78, 104, 143);
 }
 
 .projects-grid figcaption h3 {
-	font-size: 20px;
-	margin: 0;
-	padding: 0px 0 8px 0;
+	font-size: 21px;
+	margin-top: -10px;
 	color: #fff;
 }
 
 .projects-grid figcaption p {
-    color: #FFFFFF;
-}
-
-
-.projects-grid figcaption span:before {
-	content: '';
+	color: rgb(192, 192, 192);
+	font-size: 14px;
 }
 
 .projects-grid figcaption a {
+	text-decoration: none;
+	position: absolute;
+	display: inline-block;
 	text-align: center;
 	padding: 5px 10px;
 	border-radius: 4px;
-	display: inline-block;
 	background: #FC766A;
-	color: #fff;
+	font-size: 16px;
+	color: #ffffff;
+	bottom: 12%;
+	right: 10%;
 }
 
+.projects-grid figcaption a:hover {
+	background: rgb(245, 101, 87);
+}
 
 /* Hover */
 .projects-hover figure img {
-	z-index: 10;
+	z-index: 1;
 	-webkit-transition: -webkit-transform 0.4s;
-	transition: -webkit-transform 0.4s;
 	-o-transition: transform 0.4s;
-	transition: transform 0.4s;
-	transition: transform 0.4s, -webkit-transform 0.4s;
+	transition: transform 0.4s, -webkit-transform 0.4s; 
 }
 
 .no-touch .projects-hover figure:hover img,
 .projects-hover figure.cs-hover img {
-	-webkit-transform: scale(0.3);
-	-ms-transform: scale(0.3);
-	transform: scale(0.3);
+	-webkit-transform: scale(0.35) translateX(-75%) translateY(75%);
+	-ms-transform: scale(0.35) translateX(-75%) translateY(75%);
+	transform: scale(0.35) translateX(-75%) translateY(75%);
 }
 
 .no-touch .projects-hover figure:active img,
 .projects-hover figure.cs-hover img {
-	-webkit-transform: scale(0.3);
-	-ms-transform: scale(0.3);
-	transform: scale(0.3);
+	-webkit-transform: scale(0.4) translateX(-100%) translateY(100%);
+	-ms-transform: scale(0.4) translateX(-100%) translateY(100%);
+	transform: scale(0.4) translateX(-100%) translateY(100%);
 }
 
 .projects-hover figcaption {
@@ -106,8 +101,8 @@
 	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
 	-webkit-transition: opacity 0.4s, -webkit-transform 0.4s;
 	transition: opacity 0.4s, -webkit-transform 0.4s;
-	-o-transition: transform 0.4s, opacity 0.4s;
-	transition: transform 0.4s, opacity 0.4s;
+	-o-transition: transform 0.4s, opacity 0.4s, -webkit-transform 0.4s;
+	transition: transform 0.4s, opacity 0.4s, -webkit-transform 0.4s;
 	transition: transform 0.4s, opacity 0.4s, -webkit-transform 0.4s;
 }
 
@@ -125,11 +120,4 @@
 	-ms-transform: scale(1.15);
 	transform: scale(1.15);
 	opacity: 1;
-}
-
-.projects-hover figure a {
-	position: absolute;
-	bottom: 20px;
-	right: 20px;
-	margin: 6px
 }
