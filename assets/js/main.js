@@ -34,38 +34,15 @@ $(document).ready(function () {
     new WOW().init();
 })
 
-/* Programs */
-$(document).ready(function () {
-    $("#programs-list").owlCarousel({
-        animateOut: 'fadeOut',
-        animateIn: 'flipInX',
-        items: 7,
-        autoplay: true,
-        // smartSpeed: 350,
-        loop: true,
-        autoplayTimeout: 1500,
-        autoplayHoverPause: false,
-        autoplaySpeed: 1200,
-        responsive: {
-            // breakpoint from 0 up
-            0: {
-                items: 3
-            },
-            // breakpoint from 480 up
-            480: {
-                items: 4
-            },
-            // breakpoint from 760 up
-            760: {
-                items: 5
-            },
-            // breakpoint from 992 up
-            992: {
-                items: 8
-            }
-        }
+/* Tooltip */
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip({
+        trigger : 'hover'
+    })
+    $('[data-toggle="tooltip"]').on('click', function () {
+        $(this).tooltip('show');
     });
-});
+})
 
 /* Smooth Scrolling */
 $(function () {
@@ -78,7 +55,7 @@ $(function () {
 
             if (hash === '#contact') {
                 $('html, body').animate({
-                    scrollTop: $(hash).offset().top - 710
+                    scrollTop: ($(document).height() - $(window).height())
                 }, 1250, 'easeInOutExpo');
             }
             else if (hash !== '#home') {

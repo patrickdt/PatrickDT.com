@@ -15,6 +15,17 @@
         padding: 10px 20px 7px 20px;
     }
 
+     /* Projects */
+     .projects-grid {
+        padding: 0px;
+    }
+
+    .projects-grid .projects-list {
+        max-width: 340px;
+        padding: 12px;
+    }
+
+    /* Footer */
     #footer-copyrights {
         text-align: center;
     }
@@ -77,6 +88,10 @@
         margin-bottom: 2px;
     }
 
+    .experience-icons {
+        text-align: center;
+    }
+
     .experience-duration p {
         text-align: center;
         margin-bottom: 2px;
@@ -85,6 +100,15 @@
     .experience-title h5, h6{
         text-align: center;
         margin-bottom: 4px;
+    }
+
+    /* Projects */
+    .projects-grid {
+        padding: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+        list-style: none;
+        text-align: center;
     }
 
     /* Programs */
@@ -106,17 +130,17 @@
 @media (max-width: 480px) {
     /* Experiences */
     .projects-grid figcaption h3 {
-        font-size: 14px;
+        font-size: 18px;
     }
 
-    .projects-grid figcaption {
+    .projects-grid figcaption p {
         font-size: 12px;
     }
 
-    .experience-title h5, h6{
-        color: #FC766A;
+    .projects-grid figcaption a {
+        font-size: 14px;
     }
-
+    
     /* .experience-desc ul :nth-child(n+1){
         display: none;
     } */
@@ -151,5 +175,18 @@
 
     .experience-list-title h3 {
         font-size: 17px;
+    }
+
+    /* Projects */
+    .projects-grid figcaption h3 {
+        font-size: 15px;
+    }
+
+    .projects-grid figcaption p {
+        font-size: 10px;
+    }
+
+    .projects-grid figcaption a {
+        font-size: 12px;
     }
 }

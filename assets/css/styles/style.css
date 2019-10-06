@@ -12,16 +12,16 @@
     Living Coral: #FC766A rgba(252,118,106)
     Sailor Blue:  #262A3B
     Bluish gray:  #4B6076
+    Grayish blue: rgb(78, 104, 143)
+    Light gray:   rgb(213, 222, 231)
+    Silver:       rgb(192, 192, 192)
+    Mint Alt:     rgb(112, 207, 187)
 * =============================================/
 
 /* General */
 html, body {
     height: 100%;
     font-family: 'Nunito', sans-serif;
-    /* margin-right: -25px; */
-    /* overflow-x: hidden; */
-    margin: 0 !important;
-    padding: 0 !important;
 }
 
 p {
@@ -44,10 +44,6 @@ p {
 
 h3, h4, h5, h6 {
     font-family: "Roboto", sans-serif;
-}
-
-h3  {
-    /* font-family: gill-sans; */
 }
 
 /* Fonts */
@@ -275,7 +271,7 @@ body.is-preload #banner h2:before, body.is-preload #banner h2:after {
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: -10;
+    z-index: 0;
     top: 0;
     left: 0;
 }
@@ -307,6 +303,7 @@ body.is-preload #banner h2:before, body.is-preload #banner h2:after {
 .btn-back-to-top {
     color: #ADEFD1;
     position: fixed;
+    z-index: 2;
     bottom: 20px;
     right: 20px;
     font-size: 22px;
@@ -322,6 +319,10 @@ body.is-preload #banner h2:before, body.is-preload #banner h2:after {
     animation-duration: 1.4s;
 }
 
+#profile-pic img {
+    z-index: 1;
+}
+
 #home-heading {
     -webkit-animation-delay: .5s;
     animation-delay: .5s;
@@ -330,6 +331,7 @@ body.is-preload #banner h2:before, body.is-preload #banner h2:after {
 }
 
 #home-btn {
+    z-index: 1;
     -webkit-animation-delay: 1.8s;
     animation-delay: 1.8s;
     -webkit-animation-duration: 1.4s;
@@ -413,8 +415,8 @@ body.is-preload #banner h2:before, body.is-preload #banner h2:after {
 .bg-parallax {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-position: center !important;
+    background-attachment: fixed !important;
 }
 
 /* Experience */
@@ -440,18 +442,23 @@ body.is-preload #banner h2:before, body.is-preload #banner h2:after {
 
 .experience-company h4, h5{
     color: #262A3B;
-    margin-bottom: 0;
+    margin-bottom: 5px;
+}
+
+.experience-icons {
+    color: #262A3B;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.experience-title h5, h6{
+    color: #262A3B;
 }
 
 .experience-duration p {
     font-family: "Roboto", sans-serif;
     color: #262A3B;
-    margin: 0;
-}
-
-.experience-title h5, h6{
-    /* color: #262A3B; */
-    color: #FC766A;
+    margin-bottom: 5px;
 }
 
 .experience-content {
@@ -466,26 +473,6 @@ body.is-preload #banner h2:before, body.is-preload #banner h2:after {
     margin: 50px 0 15px 0;
     text-align: center;
 }
-
-.other-software-experience .content-title-underline {
-    margin-bottom: 0;
-}
-
-/* .other-experiences .experience-content {
-    max-width: 700px;
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 0;
-} */
 
 .experience-desc ul{
     list-style-type: none;
@@ -504,13 +491,17 @@ body.is-preload #banner h2:before, body.is-preload #banner h2:after {
     width: 200px;
 }
 
+#detourcoffee-logo {
+    width: 200px;
+}
+
 #ford-logo {
     width: 200px;
 }
 
-/* .other-experiences h4 {
-    text-align: center;
-} */
+.other-software-experience .content-title-underline {
+    margin-bottom: 5px;
+}
 
 .other-company-logo {
     width: 150px;
@@ -519,10 +510,6 @@ body.is-preload #banner h2:before, body.is-preload #banner h2:after {
 /* Projects */
 .projects-content-box {
     padding: 60px 0 60px 0;
-}
-
-.projects-gallery {
-    padding: 40px;
 }
 
 /* Programming Languages */
@@ -534,30 +521,39 @@ body.is-preload #banner h2:before, body.is-preload #banner h2:after {
     width: 120px;
 }
 
+.tooltip {
+    opacity: 0.97 !important;
+}
+
 .tooltip-inner {
-    background-color: rgba(112, 207, 187, 0.8);
+    background-color: rgb(112, 207, 187);
 }
 
 .tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before, .tooltip.bs-tooltip-top .arrow::before {
-    border-top-color: rgba(112, 207, 187, 0.8);
+    border-top-color: rgb(112, 207, 187);
 }
 
 .tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .tooltip.bs-tooltip-bottom .arrow::before {
-    border-bottom-color: rgba(112, 207, 187, 0.8);
+    border-bottom-color: rgb(112, 207, 187);
 }
 
 .tooltip.bs-tooltip-auto[x-placement^=left] .arrow::before, .tooltip.bs-tooltip-left .arrow::before {
-    border-top-color: rgba(112, 207, 187, 0.8);
+    border-top-color: rgb(112, 207, 187);
 }
 
 .tooltip.bs-tooltip-auto[x-placement^=right] .arrow::before, .tooltip.bs-tooltip-right .arrow::before {
-    border-top-color: rgba(112, 207, 187, 0.8);
+    border-top-color: rgb(112, 207, 187);
 }
 
 .programs-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     max-width: 750px;
     flex-wrap: wrap;
     margin: auto;
@@ -586,21 +582,10 @@ body.is-preload #banner h2:before, body.is-preload #banner h2:after {
     margin-top: 10px;
 }
 
-.icon-white i {
-    color: #262A3B;
-}
-
-.social-icon i:hover {
-    /* color: rgb(173, 239, 209) */
-    color: #FC766A;
-}
-
 /* Contact */
 footer {
-    /* background-color: lighten(#4B6076, 40%); */
-    background-color: rgb(166, 189, 214);
+    background-color: rgb(213, 222, 231);
     padding-top: 30px; 
-    /* border-top: 5px solid rgba(252,118,106,0.8) */
 }
 
 #contact-info h3 {
@@ -609,11 +594,12 @@ footer {
     margin-bottom: 30px;
 }
 
-.contact-title-underline {
-    width: 30px;
-    height: 3px;
-    background-color: #262A3B;
-    margin: -15px auto 15px auto
+.social-icon i {
+    color: #262A3B;
+}
+
+.social-icon i:hover {
+    color: #FC766A;
 }
 
 /* Footer */
@@ -625,12 +611,12 @@ footer {
 
 #footer-copyrights p {
     margin: 0;
-    color: white;
+    color: #ffffff;
 }
 
 #footer-menu {
     float: right;
-    color: #fff;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 300;
 }
@@ -646,7 +632,7 @@ footer {
 }
 
 #footer-menu a {
-    color: #fff;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 300;
     margin: 0 10px;
