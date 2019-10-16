@@ -43,8 +43,38 @@
     }
 
     /* Home */
+    #home {
+        margin-bottom: 60px;
+    }
+
     #home-heading h2 {
         font-size: 40px;
+    }
+
+    /* Arrow Downwards */
+    .arrow {
+        opacity: 0;
+        margin-left: -25px;
+        position: absolute;
+            top: 94%;
+    }
+
+    @keyframes arrow-movement {
+        0% { 
+            opacity: 0;
+            top: 89%;
+        }
+        70% {
+            opacity: 1;
+        }
+        100% { 
+            opacity: 0;
+        }
+    }
+
+    /* Particles */
+    #particles-js {
+        height: 120%;
     }
 
     /* About */
@@ -52,8 +82,19 @@
     #about-bg-diagonal {
         border-left: 0;
         border-top: 0;
-        width: 100%;
-        height: 350px;
+        width: 0%;
+        height: 0px;
+    }
+
+    #about-content-box {
+        margin-top: 120px;
+        margin-bottom: 60px;
+    }
+
+    #about-desc {
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     #about-content-box {

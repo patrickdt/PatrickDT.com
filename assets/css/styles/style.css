@@ -46,6 +46,10 @@ h3, h4, h5, h6 {
     font-family: "Roboto", sans-serif;
 }
 
+.row::before, .row::after {
+    display: block;
+}
+
 /* Fonts */
 @font-face {
     font-family: ts-signature;
@@ -266,6 +270,62 @@ body.is-preload #banner h2:before, body.is-preload #banner h2:after {
     width: 0;
 }
 
+/* Arrow Downwards */
+#arrow-downwards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    opacity: 0;
+    margin-left: -25px;
+    position: absolute;
+        top: 85%;
+}
+
+.arrow-first {
+    animation: arrow-movement 2s ease-in-out infinite;
+}
+.arrow-second {
+    animation: arrow-movement 2s 1s ease-in-out infinite;
+}
+
+.arrow:before,
+.arrow:after {
+    background: #ADEFD1;
+    content: '';
+    display: block;
+    height: 3px; 
+    position: absolute;
+        top: 0;
+        left: 0;
+    width: 50px;
+}
+
+.arrow:before {
+    transform: rotate(45deg) translateX(-23%);
+    transform-origin: top left;
+}
+
+.arrow:after {
+    transform: rotate(-45deg) translateX(23%);
+    transform-origin: top right;
+}
+
+@keyframes arrow-movement {
+    0% { 
+        opacity: 0;
+        top: 80%;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% { 
+        opacity: 0;
+    }
+}
+
 /* particles */
 #particles-js {
     width: 100%;
@@ -416,7 +476,7 @@ body.is-preload #banner h2:before, body.is-preload #banner h2:after {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center !important;
-    background-attachment: fixed !important;
+    background-attachment: fixed;
 }
 
 /* Experience */
@@ -479,13 +539,26 @@ body.is-preload #banner h2:before, body.is-preload #banner h2:after {
     margin-left: -20px;
 }
 
-.experience-desc li::before {
-    content: "\25AA"; 
-    color: #FC766A; 
-    display: inline-block; 
-    width: 1em;
-    margin-left: -1em;
+
+.experience-desc li {
+    color: #4B6076; 
+    display: inline-block;
+    list-style: none; 
+    margin-top: 2px;
+    margin-bottom: 3px;
+    position: relative;
 }
+
+.experience-desc li::before {
+  content: "\25AA";
+  color: #FC766A;  
+  display: inline-block;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em; 
+  left: -1em; 
+  position: absolute;
+}
+
 
 #capitalone-logo {
     width: 200px;
