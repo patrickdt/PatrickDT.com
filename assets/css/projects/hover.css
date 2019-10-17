@@ -69,24 +69,18 @@
 
 /* Hover */
 .projects-hover figure img {
-	z-index: 1;
+	z-index: 1 !important;
 	-webkit-transition: -webkit-transform 0.4s;
 	-o-transition: transform 0.4s;
 	transition: transform 0.4s, -webkit-transform 0.4s; 
 }
 
-.no-touch .projects-hover figure:hover img,
-.projects-hover figure.cs-hover img {
+.projects-hover figure:hover img,
+.projects-hover figure:focus img,
+.projects-hover figure:active img {
 	-webkit-transform: scale(0.35) translateX(-75%) translateY(75%);
 	-ms-transform: scale(0.35) translateX(-75%) translateY(75%);
 	transform: scale(0.35) translateX(-75%) translateY(75%);
-}
-
-.no-touch .projects-hover figure:active img,
-.projects-hover figure.cs-hover img {
-	-webkit-transform: scale(0.4) translateX(-100%) translateY(100%);
-	-ms-transform: scale(0.4) translateX(-100%) translateY(100%);
-	transform: scale(0.4) translateX(-100%) translateY(100%);
 }
 
 .projects-hover figcaption {
@@ -106,16 +100,9 @@
 	transition: transform 0.4s, opacity 0.4s, -webkit-transform 0.4s;
 }
 
-.no-touch .projects-hover figure:hover figcaption,
-.projects-hover figure.cs-hover figcaption {
-	-webkit-transform: scale(1.15);
-	-ms-transform: scale(1.15);
-	transform: scale(1.15);
-	opacity: 1;
-}
-
-.no-touch .projects-hover figure:active figcaption,
-.projects-hover figure.cs-hover figcaption {
+.projects-hover figure:hover figcaption,
+.projects-hover figure:focus figcaption,
+.projects-hover figure:active figcaption {
 	-webkit-transform: scale(1.15);
 	-ms-transform: scale(1.15);
 	transform: scale(1.15);
