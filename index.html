@@ -56,6 +56,9 @@
     <!-- font mfizz -->
     <link rel="stylesheet" href="assets/fonts/font-mfizz/font-mfizz.css">
 
+    <!-- CoreUI Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
+
     <!-- style CSS -->
     <link rel="stylesheet" href="assets/css/styles/style.css">
     <link rel="stylesheet" href="assets/css/styles/responsive.css">
@@ -122,6 +125,11 @@
                         </a>
                     </div>
                 </section>
+
+                <div id="arrow-downwards" class="wow fadeIn" data-wow-duration=".5s" data-wow-delay="2.8s">
+                    <div class="arrow arrow-first"></div>
+                    <div class="arrow arrow-second"></div>
+                </div>
             </div>
         </div>
         <div id="particles-js"></div>
@@ -139,20 +147,20 @@
                     <div id="about-content-box">
                         <div id="about-content-box-outer">
                             <div id="about-content-box-inner">
-                                <div class="content-title wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                                <div class="content-title wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">
                                     <h3>About Me</h3>
                                     <div class="content-title-underline"></div>
                                 </div>
 
                                 <div id="about-desc" class="content-title wow fadeInUp" data-wow-duration="1s"
-                                    data-wow-delay=".5s">
+                                    data-wow-delay="0s">
                                     Software Engineer.<br>Coffee enthusiast.<br>
                                     <br>
-                                    Just graduated with a Bachelor's in Mechanical Engineering from Purdue University
+                                    Graduated with a Bachelor's in Mechanical Engineering from Purdue University
                                     with Minors in Computer Science and Mathematics.
                                 </div>
 
-                                <div id="about-btn" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
+                                <div id="about-btn" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
                                     <a class="btn btn-lg btn-general btn-blue smooth-scroll" href="#experiences"
                                         role="button">Some Of My Work Experience
                                     </a>
@@ -168,51 +176,58 @@
     <!-- Experiences -->
     <section id="experiences">
         <div class="content-box">
-            <div class="content-title wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
+            <div class="content-title wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
                 <h3>Experiences</h3>
                 <div class="content-title-underline"></div>
             </div>
 
             <div class="container">
                 <div class="row experience-box">
-                    <div class="col-md-5 experience-logo wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="col-md-5 experience-logo wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0s">
                         <a href="https://www.capitalonecareers.com/"><img
                                 src="assets/img/company-logos/capitalone-logo.png" alt="logo" id="capitalone-logo"></a>
                     </div>
-                    <div class="col-md-7 experience-content wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="col-md-7 experience-content wow fadeInRight" data-wow-duration="1s" data-wow-delay="0s">
                         <div class="experience-company">
                             <h4>Capital One</h4>
                         </div>
 
                         <div class="experience-title">
-                            <h5>Full Stack Software Engineer (currently in training)</h5>
+                            <h5>Software Engineer</h5>
                         </div>
 
                         <div class="experience-icons">
-                            <i class="fab fa-js-square" data-toggle="tooltip" title="Javascript"></i> <i
-                                class="icon-bootstrap" data-toggle="tooltip" title="Bootstrap"></i> <i
-                                class="fab fa-html5" data-toggle="tooltip" title="HTML"></i> <i class="fab fa-css3-alt"
-                                data-toggle="tooltip" title="CSS"></i> <i class="icon-jquery" data-toggle="tooltip"
-                                title="JQuery"></i> <i class="icon-git" data-toggle="tooltip" title="Git"></i>
+                            <i class="fab fa-java" data-toggle="tooltip" title="Java"></i> <i class="icon-spring"
+                                data-toggle="tooltip" title="Spring Boot"></i></i> <i class="icon-cassandra" data-toggle="tooltip" title="DSE Cassandra"></i> 
+                                <i class="cib-apache-spark" data-toggle="tooltip" title="Apache Spark"></i> <i class="icon-aws"data-toggle="tooltip" title="AWS Services"></i>
+                                <i class="icon-docker" data-toggle="tooltip" title="Docker"></i> <i class="icon-git" data-toggle="tooltip" title="Git"></i> <i class="icon-maven" data-toggle="tooltip" title="Maven"></i>
                         </div>
 
                         <div class="experience-duration">
-                            <p>Aug 2019 - Present</p>
+                            <p>August 2019 - Present</p>
                         </div>
 
                         <div class="experience-desc">
                             <ul>
+                                <li>Onboarded summer interns, facilitated training sessions and committed to help the intern understand the company’s culture despite it being virtual</li>
+                                <li>Spearheaded and redesigned a data integrity (DI) validation tool within the core pipeline by collaborating with project owners and stakeholders and efficiently 
+                                    communicating with immediate team members, improving the process’ runtime duration and space consumption by around 30%</li>  
+                                <li>Created, ran, and monitored Spark jobs, handling 140M critical customer records and various data relationships stored in the main distributed 
+                                    Cassandra database</li> 
+                                <li>Contributed through several applications’ software lifecycle, from scoping requirements, implementing code with high test coverage, to successfully 
+                                    deploying it into production environment</li> 
+                                <li>AWS Solutions Architect Certified: <a href="https://www.youracclaim.com/badges/fba6708f-3787-4eb1-bc0c-b7f767c22f25/public_url">Verification</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <div class="row experience-box">
-                    <div class="col-md-5 experience-logo wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="col-md-5 experience-logo wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0s">
                         <a href="https://detourcoffeeco.com"><img src="assets/img/company-logos/detourcoffee-logo.png"
                                 alt="logo" id="detourcoffee-logo"></a>
                     </div>
-                    <div class="col-md-7 experience-content wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="col-md-7 experience-content wow fadeInRight" data-wow-duration="1s" data-wow-delay="0s">
                         <div class="experience-company">
                             <h4>Detour Coffee Co.</h4>
                         </div>
@@ -237,11 +252,11 @@
                 </div>
 
                 <div class="row experience-box">
-                    <div class="col-md-5 experience-logo wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="col-md-5 experience-logo wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0s">
                         <a href="https://corporate.ford.com/company.html"><img
                                 src="assets/img/company-logos/ford-logo.png" alt="logo" id="ford-logo"></a>
                     </div>
-                    <div class="col-md-7 experience-content wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="col-md-7 experience-content wow fadeInRight" data-wow-duration="1s" data-wow-delay="0s">
                         <div class="experience-company">
                             <h4>Ford Motor Company</h4>
                         </div>
@@ -257,7 +272,7 @@
                         </div>
 
                         <div class="experience-duration">
-                            <p>May 2017 - Aug 2017</p>
+                            <p>May 2017 - August 2017</p>
                         </div>
 
                         <div class="experience-desc">
@@ -278,23 +293,23 @@
                     </div>
                 </div>
 
-                <div class="other-software-experience wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="other-software-experience wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
                     <h4>Other Software Involvements</h4>
                     <div class="content-title-underline"></div>
                 </div>
 
                 <div class="row experience-box">
-                    <div class="col-md-5 experience-logo wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="col-md-5 experience-logo wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0s">
                         <a href="https://www.sensorhound.com/"><img src="assets/img/company-logos/sensorhound-logo.png"
                                 alt="logo" class="other-company-logo"></a>
                     </div>
-                    <div class="col-md-7 experience-content wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="col-md-7 experience-content wow fadeInRight" data-wow-duration="1s" data-wow-delay="0s">
                         <div class="experience-company">
                             <h4>SensorHound</h4>
                         </div>
 
                         <div class="experience-title">
-                            <h5>Software Engineering Intern, Backend Developer (Java)</h5>
+                            <h5>Software Engineering Intern</h5>
                         </div>
 
                         <div class="experience-icons">
@@ -329,24 +344,23 @@
                 </div>
 
                 <div class="row experience-box">
-                    <div class="col-md-5 experience-logo wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="col-md-5 experience-logo wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0s">
                         <a href="https://whizkey.ae/"><img src="assets/img/company-logos/whizkey-logo.png" alt="logo"
                                 class="other-company-logo"></a>
                     </div>
-                    <div class="col-md-7 experience-content wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="col-md-7 experience-content wow fadeInRight" data-wow-duration="1s" data-wow-delay="0s">
                         <div class="experience-company">
                             <h4>WhizKey</h4>
                         </div>
 
                         <div class="experience-title">
-                            <h5>Software Engineering Intern, Backend Developer (Python)</h5>
+                            <h5>Software Engineering Intern</h5>
                         </div>
 
                         <div class="experience-icons">
-                            <i class="fab fa-python" data-toggle="tooltip" title="Python"></i> <i class="icon-mysql"
-                                data-toggle="tooltip" title="MySQL"></i> <i class="icon-aws" data-toggle="tooltip"
-                                title="AWS EC2">
-                            </i><i class="icon-git" data-toggle="tooltip" title="Git"></i>
+                            <i class="fab fa-python" data-toggle="tooltip" title="Python"></i> <i class="cib-flask" 
+                            data-toggle="tooltip"title="Flask"></i> <i class="icon-mysql" data-toggle="tooltip" title="MySQL"></i> 
+                            <i class="icon-aws" data-toggle="tooltip" title="AWS EC2"></i> <i class="icon-git" data-toggle="tooltip" title="Git"></i>
                         </div>
 
                         <div class="experience-duration">
@@ -356,9 +370,9 @@
                         <div class="experience-desc">
                             <ul>
                                 <li>Designed database architecture for enterprise web application running MySQL
-                                    Database type which resulted in more systematized data collection</li>
+                                    Database type which resulted in a more systematized data collection</li>
                                 <li>Implemented backend business logic for customer facing web application utilizing
-                                    Flask, SQL, MySQL, SQLAlchemy, and Git</li>
+                                    Python, Flask, MySQL, and SQLAlchemy</li>
                             </ul>
                         </div>
                     </div>
@@ -370,14 +384,14 @@
     <!-- Projects -->
     <section id="projects">
         <div class="container-fluid projects-content-box">
-            <div class="content-title wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+            <div class="content-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
                 <h3>Projects</h3>
                 <div class="content-title-underline"></div>
             </div>
 
             <div class="projects-grid projects-hover">
                 <div class="projects-list">
-                    <figure class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                    <figure class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
                         <img src="assets/img/projects-imgs/cdesignlab.png" alt="C Design Lab">
                         <figcaption>
                             <h3>C Design Lab Deep Learning</h3>
@@ -387,7 +401,7 @@
                     </figure>
                 </div>
                 <div class="projects-list">
-                    <figure class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                    <figure class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
                         <img src="assets/img/projects-imgs/pytorch.png" alt="Deep Learning with Tensorflow and Python">
                         <figcaption>
                             <h3>Deep Learning with Pytorch</h3>
@@ -397,7 +411,7 @@
                     </figure>
                 </div>
                 <div class="projects-list">
-                    <figure class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                    <figure class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
                         <img src="assets/img/projects-imgs/nanohub.png" alt="Nanohub Fracture Analysis">
                         <figcaption>
                             <h3>Nanohub Research</h3>
@@ -407,7 +421,7 @@
                     </figure>
                 </div>
                 <div class="projects-list">
-                    <figure class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                    <figure class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
                         <img src="assets/img/projects-imgs/cfd.png" alt="Computational Fluid Dynamics">
                         <figcaption>
                             <h3>Computational Fluid Dynamics</h3>
@@ -417,7 +431,7 @@
                     </figure>
                 </div>
                 <div class="projects-list">
-                    <figure class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                    <figure class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
                         <img src="assets/img/projects-imgs/senior-design.png"
                             alt="Senior Design 2019 - Tilting Umbrella">
                         <figcaption>
@@ -428,7 +442,7 @@
                     </figure>
                 </div>
                 <div class="projects-list">
-                    <figure class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                    <figure class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
                         <img src="assets/img/projects-imgs/web-design.png" alt="Travel Website Practice">
                         <figcaption>
                             <h3>Travel Site Practice</h3>
@@ -444,62 +458,73 @@
     <!-- Programming Languages -->
     <section id="programs">
         <div class="content-box">
-            <div class="content-title wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
+            <div class="content-title wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
                 <h3>Key Skills</h3>
                 <div class="content-title-underline"></div>
             </div>
 
             <div class="container">
-                <div class="row wow bounceInLeft" data-wow-duration="1s" data-wow-delay=".5s">
-                    <div class="col-md-12 programs-list">
-                        <div class="program">
-                            <img src="assets/img/programs-icons/java-logo.jpg" class="img-responsive bs-tooltip-top"
-                                alt="program" data-toggle="tooltip" data-placement="top" title="Java">
-                        </div>
-                        <div class="program">
-                            <img src="assets/img/programs-icons/python-logo.jpg" class="img-responsive" alt="program"
-                                data-toggle="tooltip" data-placement="top" title="Python">
-                        </div>
-                        <div class="program">
-                            <img src="assets/img/programs-icons/js-logo.jpg" class="img-responsive" alt="program"
-                                data-toggle="tooltip" data-placement="top" title="JavaScript">
-                        </div>
-                        <div class="program">
-                            <img src="assets/img/programs-icons/html5-logo.jpg" class="img-responsive" alt="program"
-                                data-toggle="tooltip" data-placement="top" title="HTML">
-                        </div>
-                        <div class="program">
-                            <img src="assets/img/programs-icons/css3-logo.jpg" class="img-responsive" alt="program"
-                                data-toggle="tooltip" data-placement="top" title="CSS">
-                        </div>
-                        <div class="program">
-                            <img src="assets/img/programs-icons/wildfly-logo.jpg" class="img-responsive" alt="program"
-                                data-toggle="tooltip" data-placement="top" title="JBoss WildFly">
-                        </div>
-                        <div class="program">
-                            <img src="assets/img/programs-icons/catia-logo.jpg" class="img-responsive" alt="program"
-                                data-toggle="tooltip" data-placement="bottom" title="CATIA">
-                        </div>
-                        <div class="program">
-                            <img src="assets/img/programs-icons/solidworks-logo.jpg" class="img-responsive"
-                                alt="program" data-toggle="tooltip" data-placement="bottom" title="SolidWorks">
-                        </div>
-                        <div class="program">
-                            <img src="assets/img/programs-icons/mysql-logo.jpg" class="img-responsive" alt="program"
-                                data-toggle="tooltip" data-placement="bottom" title="MySQL">
-                        </div>
-                        <div class="program">
-                            <img src="assets/img/programs-icons/cassandra-logo.jpg" class="img-responsive" alt="program"
-                                data-toggle="tooltip" data-placement="bottom" title="Apache Cassandra">
-                        </div>
-                        <div class="program">
-                            <img src="assets/img/programs-icons/flask-logo.jpg" class="img-responsive" alt="program"
-                                data-toggle="tooltip" data-placement="bottom" title="Flask Web Framework">
-                        </div>
-                        <div class="program">
-                            <img src="assets/img/programs-icons/arduino-logo.jpg" class="img-responsive" alt="program"
-                                data-toggle="tooltip" data-placement="bottom" title="Arduino">
-                        </div>
+                <div class="row wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0s"></div>
+                <div class="col-md-12 programs-list">
+                    <div class="program">
+                        <img src="assets/img/programs-icons/java-logo.jpg"
+                            class="img-responsive bs-tooltip-top wow fadeIn" data-wow-duration="1s" data-wow-delay="0s"
+                            alt="program" data-toggle="tooltip" data-placement="top" title="Java">
+                    </div>
+                    <div class="program">
+                        <img src="assets/img/programs-icons/python-logo.jpg" class="img-responsive wow fadeIn"
+                            data-wow-duration="1s" data-wow-delay="0s" alt="program" data-toggle="tooltip"
+                            data-placement="top" title="Python">
+                    </div>
+                    <div class="program">
+                        <img src="assets/img/programs-icons/spring-logo.jpg" class="img-responsive wow fadeIn"
+                            data-wow-duration="1s" data-wow-delay="0s" alt="program" data-toggle="tooltip"
+                            data-placement="top" title="Spring Framework">
+                    </div>
+                    <div class="program">
+                        <img src="assets/img/programs-icons/cassandra-logo.jpg" class="img-responsive wow fadeIn"
+                            data-wow-duration="1s" data-wow-delay="0s" alt="program" data-toggle="tooltip"
+                            data-placement="top" title="Apache Cassandra">
+                    </div>
+                    <div class="program">
+                        <img src="assets/img/programs-icons/apache-spark-logo.jpg" class="img-responsive wow fadeIn"
+                            data-wow-duration="1s" data-wow-delay="0s" alt="program" data-toggle="tooltip"
+                            data-placement="top" title="Apache Spark">
+                    </div>
+                    <div class="program">
+                        <img src="assets/img/programs-icons/docker-logo.jpg" class="img-responsive wow fadeIn"
+                            data-wow-duration="1s" data-wow-delay="0s" alt="program" data-toggle="tooltip"
+                            data-placement="top" title="Docker">
+                    </div>
+                    <div class="program">
+                        <img src="assets/img/programs-icons/maven-logo.jpg" class="img-responsive wow fadeIn"
+                            data-wow-duration="1s" data-wow-delay="0s" alt="program" data-toggle="tooltip"
+                            data-placement="bottom" title="Maven">
+                    </div>
+                    <div class="program">
+                        <img src="assets/img/programs-icons/aws-saa-logo.jpg" class="img-responsive wow fadeIn"
+                            data-wow-duration="1s" data-wow-delay="0s" alt="program" data-toggle="tooltip"
+                            data-placement="bottom" title="AWS Certified - Solutions Architect Assocate">
+                    </div>
+                    <div class="program">
+                        <img src="assets/img/programs-icons/catia-logo.jpg" class="img-responsive wow fadeIn"
+                            data-wow-duration="1s" data-wow-delay="0s" alt="program" data-toggle="tooltip"
+                            data-placement="bottom" title="CATIA">
+                    </div>
+                    <div class="program">
+                        <img src="assets/img/programs-icons/solidworks-logo.jpg" class="img-responsive wow fadeIn"
+                            data-wow-duration="1s" data-wow-delay="0s" alt="program" data-toggle="tooltip"
+                            data-placement="bottom" title="SolidWorks">
+                    </div>
+                    <div class="program">
+                        <img src="assets/img/programs-icons/mysql-logo.jpg" class="img-responsive wow fadeIn"
+                            data-wow-duration="1s" data-wow-delay="0s" alt="program" data-toggle="tooltip"
+                            data-placement="bottom" title="MySQL">
+                    </div>
+                    <div class="program">
+                        <img src="assets/img/programs-icons/flask-logo.jpg" class="img-responsive wow fadeIn"
+                            data-wow-duration="1s" data-wow-delay="0s" alt="program" data-toggle="tooltip"
+                            data-placement="bottom" title="Flask Web Framework">
                     </div>
                 </div>
             </div>
@@ -535,7 +560,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
                         <div id="footer-copyrights">
-                            <p>Copyrights &copy; 2019 All Rights Reserved by Patrick Tirtapraja</p>
+                            <p>Copyrights &copy; 2020 All Rights Reserved by Patrick Tirtapraja</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
